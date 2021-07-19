@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="css/animate.css"/> -->
+      <link rel="preload" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.rel='stylesheet'">
+      <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="css/hystmodal.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/old-style.css">
+      <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+<body class="checkout">
+<header>
+    <div class="top-line">
+        <div class="container">
+            <div class="logo"><img src="img/white-logo-2.svg" alt=""></div>
+
+
+            <div class="telephone__block">
+                <div class="tel__ico"><img src="img/telephone__top.svg" alt=""></div>
+                <div class="telephone__numbers">
+                    <div class="telephone">0800 330 899 <img src="img/arrow__down.svg" alt=""></div>
+                    <a href="tel:" class="phone">Перезвонить мне</a>
+                    <div class="telephones__hidden">
+                        <a href="#" class="soc">
+                            <span class="soc1"><img src="img/chat.svg" alt=""></span>
+                            <span>Чат на сайте</span>
+                        </a>
+                        <a href="#" class="soc">
+                            <span class="soc2"><img src="img/telegram.svg" alt=""></span>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="#" class="soc">
+                            <span class="soc3"><img src="img/viber.svg" alt=""></span>
+                            <span>Viber</span>
+                        </a>
+
+                        <div class="telephones__block">
+                            <div class="telephone__ico"><img src="img/phone1.svg" alt=""></div>
+                            <div class="tel__content">
+                                <a href="tel:" class="telephone__number">099 3000 899</a>
+                                <span>з 10:00 до 19:00 (пн-нд)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="telephones__block">
+                            <div class="telephone__ico"><img src="img/phone1.svg" alt=""></div>
+                            <div class="tel__content">
+                                <a href="tel:" class="telephone__number">044 3000 899</a>
+                                <span>
+                                    Безкоштовно по Києву<br>
+                                    зі стаціонарних<br>
+                                    з 10:00 до 19:00 (пн-нд)
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</header>
+<div class="close"><img src="img/close.svg" alt=""></div>
+<main>
+
+
+
+<section class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs__container">
+            <li><a href="#">Главная</a></li>
+            <li class="active">Оформление заказа</li>
+        </ul>
+    </div>
+</section>
+<section class="section section-checkout">
+    <div class="container">
+        <div class="slider__header title__contant">
+            <div class="slider__header__title">Оформление заказа</div>
+        </div>
+        <div class="checkout-page">
+            <div class="checkout__form sc-bg">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="step__title done" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <span>1</span>Ваши данные
+                        </button>
+                        <a href="#" class="btn-write-edit">Редактировать</a>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="step__content">
+                                <div class="tabs-chekout">
+                                    <ul class="tab_nav nav nav-pills" id="rewiev-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Я новый покупатель</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Я постоянный клиент</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                            <form class="form form__user">
+                                                <label class="form__block ">
+                                                    <p>Имя  </p>
+                                                    <input class="form__input" type="text" >
+                                                </label>
+                                                <label class="form__block">
+                                                    <p>Фамилия  </p>
+                                                    <input class="form__input" type="text" >
+                                                </label>
+                                                <label class="form__block">
+                                                    <p>Телефон  </p>
+                                                    <input class="form__input" type="text" >
+                                                </label>
+                                                <label class="form__block">
+                                                    <p>Email  </p>
+                                                    <input class="form__input" type="text" >
+                                                </label>
+                                                <div class="form__check form__check-remember check mrb-2">
+                                                    <input id="check1" type="checkbox">
+                                                    <label for="check1">Я получатель</label>
+                                                </div>
+                                            
+                                                <button class="btn btn-primary btn-submit" type="submit">Далее</button>
+                                               
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                            <form class="form form__user">
+                                                <label class="form__block ">
+                                                    <p>Имя  </p>
+                                                    <input class="form__input" type="text" >
+                                                </label>
+                                                <label class="form__block">
+                                                    <p>Фамилия  </p>
+                                                    <input class="form__input" type="text" >
+                                                </label>
+                                                <label class="form__block">
+                                                    <p>Телефон  </p>
+                                                    <input class="form__input" type="text" >
+                                                </label>
+                                                <label class="form__block">
+                                                    <p>Email  </p>
+                                                    <input class="form__input" type="text" >
+                                                </label>
+                                                <div class="form__check form__check-remember check mrb-2">
+                                                    <input id="check1" type="checkbox">
+                                                    <label for="check1">Я получатель</label>
+                                                </div>
+                                            
+                                                <button class="btn btn-primary btn-submit" type="submit">Далее</button>
+                                               
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="step__title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <span>2</span>Способ доставки
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="step__content">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne">
+                                        <a class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            <div class="form__check radio">
+                                                <input id="radio1" type="radio" name="delivery"  type="delivery">
+                                                <label for="radio1">Новая почта</label>
+                                            </div>
+                                        </a>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                          
+                                        <label class="form__block">
+                                            <select class="form__input" name="text">
+                                                <option value=""></option>
+                                            </select>
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                        <a class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            <div class="form__check radio">
+                                                <input id="radio2" type="radio" name="delivery" type="delivery">
+                                                <label for="radio2">Justin</label>
+                                            </div>
+                                        </a>
+                                      </h2>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <label class="form__block">
+                                            <select class="form__input" name="text">
+                                                <option disabled selected>Выберите город</option>
+                                                <option value="Харків">Харків</option>
+                                            </select>
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingThree">
+                                        <a class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            <div class="form__check radio">
+                                                <input id="radio3" type="radio" name="delivery"  type="delivery">
+                                                <label for="radio3">Курьером</label>
+                                            </div>
+                                        </a>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <label class="form__block">
+                                            <select class="form__input" name="text">
+                                                <option disabled>Выберите город</option>
+                                                <option value="Харків">Харків</option>
+                                            </select>
+                                        </label>
+                                        <label class="form__block">
+                                            <select class="form__input" name="text">
+                                                <option disabled>Выберите город</option>
+                                                <option value="Харків">Харків</option>
+                                            </select>
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div> 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="step__title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <span>3</span>Способ оплаты
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="step__content">
+                                <div class="form__check radio">
+                                    <input id="pay1" type="radio" name="method-pay" >
+                                    <label for="pay1">Наложенный платеж</label>
+                                </div>
+                                <div class="form__check radio">
+                                    <input id="pay2" type="radio" name="method-pay" >
+                                    <label for="pay2">Google Pay</label>
+                                </div>
+                                <div class="form__check radio">
+                                    <input id="pay4" type="radio" name="method-pay" >
+                                    <label for="pay4">Оплата картой на сайте</label>
+                                </div>
+                                <div class="form__check radio">
+                                    <input id="pay3" type="radio" name="method-pay" >
+                                    <label for="pay3">Privat Pay</label>
+                                </div>
+                                <div class="form__check radio">
+                                    <input id="pay5" type="radio" name="method-pay" >
+                                    <label for="pay5">Кредит онлайн</label>
+                                </div>
+                                <div class="form__check radio">
+                                    <input id="pay7" type="radio" name="method-pay" >
+                                    <label for="pay7">Безналичный расчет (для юр. лиц)</label>
+                                </div>
+                               
+                            </div> 
+                        </div>
+                        <div class="step__footer">
+                            <div class="form__check form__check-remember check">
+                                <input id="pay6" type="checkbox">
+                                <label for="pay6">Запомнить меня</label>
+                            </div>
+                            <a href="#" class="step__footer_coment" data-comment="#commentStep">Добавить комментарии к заказу</a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="checkout__cart">
+                <div class="checkout__cart-cart">
+                    <div class="cart__list">
+                        <div class="cart__list_item pr__card">
+                            <div class="btn-close_cart"></div>
+                            <div class="pr__card_img">
+                                <img loading="lazy" src="img/pr-card-100.png" alt="">
+                            </div>
+                            <div class="pr__card_content">
+                                <div class="pr__card_content-head">
+                                    <a href="#" class="pr__card_title">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                    <div class="pr__card_code">Код: 1445953</div>
+                                </div>
+                                <div class="pr__card_content-add">+ Расширенная гарантия</div>
+                                <div class="pr__card_bottom">
+                                    <div class="pr__card_cost pr__card_cost-sale">
+                                        <span class="old-cost">1 359 грн</span>
+                                        2 599 грн</div>
+                                    <div class="pr__card_cost-total">
+                                        <div class="pr__card_count product-buy__quantity">
+                                            <button class="quantity_btn quantity_btn-minus quantity-min">
+                                                <img src="icons/minus.svg" alt="">
+                                            </button>
+                                            <input class="quantity-input" type="text" name="quantity" value="1" size="2" id="input-quantity" placeholder="">
+                                            <input type="hidden" name="product_id" value="565">
+                                            <button class="quantity_btn quantity_btn-plus quantity-max">
+                                                <img src="icons/plus.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="pr__card_cost">2 599 грн</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__list_item pr__card">
+                            <div class="btn-close_cart"></div>
+                            <div class="pr__card_img">
+                                <img loading="lazy" src="img/pr-card-100-2.png" alt="">
+                            </div>
+                            <div class="pr__card_content">
+                                <div class="pr__card_content-head">
+                                    <a href="#" class="pr__card_title">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                    <div class="pr__card_code">Код: 1445953</div>
+                                </div>
+                                <div class="pr__card_bottom">
+                                    <div class="pr__card_cost">
+                                        2 599 грн</div>
+                                    <div class="pr__card_cost-total">
+                                        <div class="pr__card_count product-buy__quantity">
+                                            <button class="quantity_btn quantity_btn-minus quantity-min">
+                                                <img src="icons/minus.svg" alt="">
+                                            </button>
+                                            <input class="quantity-input" type="text" name="quantity" value="1" size="2" id="input-quantity" placeholder="">
+                                            <input type="hidden" name="product_id" value="565">
+                                            <button class="quantity_btn quantity_btn-plus quantity-max">
+                                                <img src="icons/plus.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="pr__card_cost">2 599 грн</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__list_item pr__card">
+                            <div class="btn-close_cart"></div>
+                            <div class="pr__card_img">
+                                <img loading="lazy" src="img/pr-card-100-3.png" alt="">
+                            </div>
+                            <div class="pr__card_content">
+                                <div class="pr__card_content-head">
+                                    <a href="#" class="pr__card_title">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                    <div class="pr__card_code">Код: 1445953</div>
+                                </div>
+                                <div class="pr__card_bottom">
+                                    <div class="pr__card_cost">
+                                        2 599 грн</div>
+                                    <div class="pr__card_cost-total">
+                                        <div class="pr__card_count product-buy__quantity">
+                                            <button class="quantity_btn quantity_btn-minus quantity-min">
+                                                <img src="icons/minus.svg" alt="">
+                                            </button>
+                                            <input class="quantity-input" type="text" name="quantity" value="1" size="2" id="input-quantity" placeholder="">
+                                            <input type="hidden" name="product_id" value="565">
+                                            <button class="quantity_btn quantity_btn-plus quantity-max">
+                                                <img src="icons/plus.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="pr__card_cost">2 599 грн</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__list_item pr__card">
+                            <div class="btn-close_cart"></div>
+                            <div class="pr__card_img">
+                                <img loading="lazy" src="img/pr-card-100-3.png" alt="">
+                            </div>
+                            <div class="pr__card_content">
+                                <div class="pr__card_content-head">
+                                    <a href="#" class="pr__card_title">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                    <div class="pr__card_code">Код: 1445953</div>
+                                </div>
+                                <span class="garanty">+ Расширенная гарантия</span>
+                                <div class="pr__card_bottom">
+                                    <div class="pr__card_cost">
+                                        2 599 грн</div>
+                                    <div class="pr__card_cost-total">
+                                        <div class="pr__card_count product-buy__quantity">
+                                            <button class="quantity_btn quantity_btn-minus quantity-min">
+                                                <img src="icons/minus.svg" alt="">
+                                            </button>
+                                            <input class="quantity-input" type="text" name="quantity" value="1" size="2" id="input-quantity" placeholder="">
+                                            <input type="hidden" name="product_id" value="565">
+                                            <button class="quantity_btn quantity_btn-plus quantity-max">
+                                                <img src="icons/plus.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="pr__card_cost">2 599 грн</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bonus__block">
+                        <div class="bonus__block_title">Мои бонусы</div>
+                        <div class="bonus__block_info">Доступно для использования <span>100.01 грн</span></div>
+                        <div class="bonus__block_check">
+                            <div class="form__check form__check-remember check">
+                                <input id="pay10" type="checkbox">
+                                <label for="pay10">Оплатить бонусами</label>
+                            </div>
+                            <form class="form__promo">
+                                <p>
+                                    <input type="text" name="text" class="form__input" placeholder="Сумма">
+                                
+                                    <button class="btn btn-primary">Применить</button>
+                                </p>   
+                            </form>
+                        </div>
+                        <div class="bonus__block_check--info">
+                            Сумма для списания не должна превышать не более 50% стоимости товара
+                        </div>
+                        <div class="bonus__block_check--info error">
+                            Сумма для списания не должна превышать не более 50% стоимости товара
+                        </div>
+                        
+                    </div>
+
+                    <div class="checkout__tolal cart__total">
+                        
+                        <p class="checkout__tolal_item">4 товара на сумму:<span class="new__price">4 360  грн</span></p>
+                        <p class="checkout__tolal_item checkout__tolal_item-total">К оплате:<span class="new__price">4 360  грн</span></p>
+                        <form class="form__promo">
+                            <p>
+                                <input type="promo" name="tel" id="telClick" class="form__input" placeholder="Ваш промокод">
+                           
+                                 <button class="btn btn-oneclick">Применить</button>
+                            </p>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+//= details/footer.html
+
+<!-- <a data-fancybox data-src="#hidden-content" href="javascript:;" class="btn__order">Заказать звонок</a> -->
+<div style="display: none;" id="hidden-content">
+	
+</div>
+
+<!-- Pop-up окна -->
+<div class="hystmodal" id="login" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__window modal__window_login hystmodal__window" role="dialog" aria-modal="true">
+            <button  class="modal__window_close btn-close" data-hystclose class="hystmodal__close"></button>
+            <div class="modal__body modal__body_step-one">
+                <div class="section__title">Вход | Регистрация</div>
+                <form class="form form__login">
+                    <label class="form__block require">
+                        <p>Телефон <span>*</span></p>
+                        <input class="form__input" type="tel" placeholder="+380">
+                    </label>
+                    <button class="btn btn-primary btn-submit" type="submit">Войти</button>
+                    <div class="form__check check">
+                        <input id="check" type="checkbox">
+                        <label for="check">
+                         Регистрируясь, вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+                        </label>
+                    </div>
+                </form>
+                
+                <div class="text-line">
+                    или
+                </div>
+                <div class="social__login">
+                     <p>Войдите через соц. сети:</p>
+                     <div class="btn__block">
+                         <a href="#" class="btn btn-social">
+                             <img src="icons/facebook.svg" alt="">
+                             Facebook</a>
+                         <a href="#" class="btn btn-social">
+                             <img src="icons/google.svg" alt="">
+                             Google</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="checkIn"  aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__window modal__window_login hystmodal__window" role="dialog" aria-modal="true">
+            <button  class="modal__window_close btn-close" data-hystclose class="hystmodal__close"></button>
+            <div class="modal__body modal__body_step-two">
+                <div class="section__title">Вход | Регистрация</div>
+                <p class="form__login_info">Введите код из SMS/Viber присланный на <span>+380997801655</span></p>
+                <form class="form form__login">
+                    <label class="form__block require">
+                        <p>Код <span>*</span></p>
+                        <input class="form__input form__input-password" type="text" placeholder="****">
+                    </label>
+                    <div class="form__line">
+                        <div class="form__check form__check-remember check">
+                            <input id="check1" type="checkbox">
+                            <label for="check1">Запомнить меня</label>
+                        </div>
+                        <button class="btn btn-edit btn-edit_grey">
+                            Выслать код еще раз
+                        </button>
+                    </div>
+                    <button class="btn btn-primary btn-submit" type="submit">Войти</button>
+                   
+                </form>
+                
+                <button class="btn btn-edit">
+                    Изменить номер телефона
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="modalCart"  aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__window modal__window_cart hystmodal__window" role="dialog" aria-modal="true">
+            <button  class="modal__window_close btn-close" data-hystclose class="hystmodal__close"></button>
+            <div class="modal__body modal__body_cart">
+                <div class="section__title">Корзина</div>
+                <div class="modal__cart_list cart__list">
+                    <div class="cart__list_item pr__card">
+                        <div class="btn-close_cart"></div>
+                        <div class="pr__card_img">
+                            <img loading="lazy" src="img/pr-card-100.png" alt="">
+                        </div>
+                        <div class="pr__card_content">
+                            <div class="pr__card_content-head">
+                                <a href="#" class="pr__card_title">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                <div class="pr__card_code">Код: 1445953</div>
+                            </div>
+                            <div class="pr__card_content-add">+ Расширенная гарантия</div>
+                            <div class="pr__card_bottom">
+                                <div class="pr__card_cost pr__card_cost-sale">
+                                    <span class="old-cost">1 359 грн</span>
+                                    2 599 грн</div>
+                                <div class="pr__card_cost-total">
+                                    <div class="pr__card_count product-buy__quantity">
+                                        <button class="quantity_btn quantity_btn-minus quantity-min">
+                                            <img src="icons/minus.svg" alt="">
+                                        </button>
+                                        <input class="quantity-input" type="text" name="quantity" value="1" size="2" id="input-quantity" placeholder="">
+                                        <input type="hidden" name="product_id" value="565">
+                                        <button class="quantity_btn quantity_btn-plus quantity-max">
+                                            <img src="icons/plus.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="pr__card_cost">2 599 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__list_item pr__card">
+                        <div class="btn-close_cart"></div>
+                        <div class="pr__card_img">
+                            <img loading="lazy" src="img/pr-card-100-2.png" alt="">
+                        </div>
+                        <div class="pr__card_content">
+                            <div class="pr__card_content-head">
+                                <a href="#" class="pr__card_title">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                <div class="pr__card_code">Код: 1445953</div>
+                            </div>
+                            <div class="pr__card_bottom">
+                                <div class="pr__card_cost">
+                                    2 599 грн</div>
+                                <div class="pr__card_cost-total">
+                                    <div class="pr__card_count product-buy__quantity">
+                                        <button class="quantity_btn quantity_btn-minus quantity-min">
+                                            <img src="icons/minus.svg" alt="">
+                                        </button>
+                                        <input class="quantity-input" type="text" name="quantity" value="1" size="2" id="input-quantity" placeholder="">
+                                        <input type="hidden" name="product_id" value="565">
+                                        <button class="quantity_btn quantity_btn-plus quantity-max">
+                                            <img src="icons/plus.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="pr__card_cost">2 599 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__list_item pr__card">
+                        <div class="btn-close_cart"></div>
+                        <div class="pr__card_img">
+                            <img loading="lazy" src="img/pr-card-100-3.png" alt="">
+                        </div>
+                        <div class="pr__card_content">
+                            <div class="pr__card_content-head">
+                                <a href="#" class="pr__card_title">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                <div class="pr__card_code">Код: 1445953</div>
+                            </div>
+                            <div class="pr__card_bottom">
+                                <div class="pr__card_cost">
+                                    2 599 грн</div>
+                                <div class="pr__card_cost-total">
+                                    <div class="pr__card_count product-buy__quantity">
+                                        <button class="quantity_btn quantity_btn-minus quantity-min">
+                                            <img src="icons/minus.svg" alt="">
+                                        </button>
+                                        <input class="quantity-input" type="text" name="quantity" value="1" size="2" id="input-quantity" placeholder="">
+                                        <input type="hidden" name="product_id" value="565">
+                                        <button class="quantity_btn quantity_btn-plus quantity-max">
+                                            <img src="icons/plus.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="pr__card_cost">2 599 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__total">
+                    <p>Итого:<span class="new__price">2310 грн</span></p>
+                </div>
+                <div class="cart__product__buttons">
+                    <a href="#" data-hystmodal="#modalCart" class="btn basket">Продолжить покупки</a>
+                    <a href="#" class="btn cart__order">Оформить заказ</a>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <div class="modal__footer_item modal__footer_title">
+                    <p class="title">Или заказать по телефону</p>
+                    <p class="info">Мы перезвоним Вам в течение 10 минут. Или оформите заказ на сайте самостоятельно всего за 2 минуты.</p>
+                </div>
+                <div class="modal__footer_item modal__footer_form">
+                    <form class="form__oneclick">
+                        <label for="telClick">Телефон:</label>
+                        <p>
+                            <input type="tel" name="tel" id="telClick" class="form__input" placeholder="+38 (0__) - ___- __ - __ ">
+                       
+                             <button  class="btn btn-oneclick">Купить в 1 клик</button>
+                        </p>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="cashback"  aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__window  hystmodal__window" role="dialog" aria-modal="true">
+            <button  class="modal__window_close btn-close" data-hystclose class="hystmodal__close"></button>
+            <div class="modal__body modal__body_info">
+                <div class="section__title">Cashback</div>
+               <p>CashBack — после покупки, через 14 дней, мы начислим бонусы к Вам на счет!
+                Расплачиваться можно хоть все 100% цены товара
+                Узнать свой бонусный баланс можно в личном кабинете
+                Хватит терпения накопить на Porsche ;) ?!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="addNewRewiev" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__window modal__window_login hystmodal__window" role="dialog" aria-modal="true">
+            <button  class="modal__window_close btn-close" data-hystclose class="hystmodal__close"></button>
+            <div class="modal__body modal__body_step-one">
+                <div class="section__title">Оставить отзыв</div>
+                <form class="form form__login">
+                    <label class="form__block require">
+                        <p>Имя <span>*</span></p>
+                        <input class="form__input" type="text">
+                    </label>
+                    <label class="form__block require">
+                        <p>Email</p>
+                        <input class="form__input" type="email">
+                    </label>
+                    <label class="form__block require">
+                        <p>Ваш отзыв <span>*</span></p>
+                        <textarea name="text" class="form__input" ></textarea>
+                    </label>
+                    <label class="form__block rating__block require">
+                        <p>Ваша оценка<span>*</span></p>
+                        <div class="form__rating">
+                            <svg class="star">
+                                <clipPath id="star" clipPathUnits="objectBoundingBox"><path d="M0.54,0.037 L0.667,0.353 L0.993,0.382 C1,0.384,1,0.414,1,0.429 L0.761,0.654 L0.835,0.988 C0.84,1,0.816,1,0.796,1 L0.517,0.84 L0.237,1 C0.217,1,0.193,1,0.198,0.988 L0.272,0.654 L0.025,0.429 C0.008,0.414,0.017,0.384,0.04,0.382 L0.366,0.353 L0.493,0.037 C0.502,0.015,0.531,0.015,0.54,0.037"></path></clipPath>
+                            </svg>
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label for="star-1"></label>
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label for="star-2"></label>
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label for="star-3"></label>
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label for="star-4"></label>
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label for="star-5"></label>
+                        </div>
+                    </label>
+                    
+                    <button class="btn btn-primary btn-submit" type="submit">Оставить отзыв</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="buyOneClick" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__window modal__window_login hystmodal__window" role="dialog" aria-modal="true">
+            <button  class="modal__window_close btn-close" data-hystclose class="hystmodal__close"></button>
+            <div class="modal__body modal__body_step-one">
+                <div class="section__title">Купить в 1 клик</div>
+                <form class="form form__login">
+                    <label class="form__block require">
+                        <p>Имя <span>*</span></p>
+                        <input class="form__input" type="text">
+                    </label>
+                    <label class="form__block require">
+                        <p>Телефон <span>*</span></p>
+                        <input class="form__input" type="email">
+                    </label>
+                    
+                    <button class="btn btn-primary btn-submit" type="submit">Купить</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="commentStep"  aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__window modal__window_login hystmodal__window" role="dialog" aria-modal="true">
+            <button  class="modal__window_close btn-close" data-hystclose class="hystmodal__close"></button>
+            <div class="modal__body modal__body_step-two">
+                <div class="section__title">Добавить комментарии к заказу</div>
+                
+                <form class="form form__login">
+                    <label class="form__block require">
+                        <p>Коментарий</p>
+                        <textarea name="text" class="form__input" ></textarea>
+                    </label>
+                    
+                    <button class="btn btn-primary btn-submit" type="submit">Оставить отзыв</button>
+                    
+                </form>
+                
+                <button class="btn btn-edit">
+                    Изменить номер телефона
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+	<script src="js/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+	<script src="js/hystmodal.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+	<script defer="defer" src="js/scripts.js"></script>    
+    
+
+
+	
+
+<div class="back__catalog"></div>
+</body>
+</html>

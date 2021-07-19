@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="css/animate.css"/> -->
+      <link rel="preload" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.rel='stylesheet'">
+      <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="css/hystmodal.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/old-style.css">
+      <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+<body class="other__page">
+
+<a href="#" class="ad-banner">
+    <img src="./img/top-banner-yellow-img.jpg" alt="">
+</a>
+
+<header>
+    <div class="top-line">
+        <div class="container">
+            <div class="logo"><img src="img/logo__white.svg" alt=""></div>
+            <ul class="top__menu">
+                <li class="top__item red"><a href="#" class="top__link">Акции</a></li>
+                <li class="top__item"><a href="#" class="top__link">О компании</a></li>
+                <li class="top__item has-children">
+                    <a href="#" class="top__link">Покупателям</a>
+                    <ul class="submenu">
+                        <li class="sub__item"><a href="#" class="sub__link">Доставка</a></li>
+                        <li class="sub__item"><a href="#" class="sub__link">Оплата</a></li>
+                        <li class="sub__item"><a href="#" class="sub__link">Гарантия</a></li>
+                        <li class="sub__item"><a href="#" class="sub__link">Обмен и возврат</a></li>
+                        <li class="sub__item"><a href="#" class="sub__link">Дополнительная гарантия</a></li>
+                        <li class="sub__item"><a href="#" class="sub__link">Бонусная прорамма</a></li>
+                        <li class="sub__item"><a href="#" class="sub__link">Подарочные сертификаты</a></li>
+                    </ul>
+                </li>
+                <li class="top__item"><a href="#" class="top__link">Контакты</a></li>
+            </ul>
+
+            <div class="telephone__block">
+                <div class="tel__ico"><img src="img/telephone__top.svg" alt=""></div>
+                <div class="telephone__numbers">
+                    <div class="telephone">0800 330 899 <img src="img/arrow__down.svg" alt=""></div>
+                    <a href="tel:" class="phone">Перезвонить мне</a>
+                    <div class="telephones__hidden">
+                        <a href="#" class="soc">
+                            <span class="soc1"><img src="img/chat.svg" alt=""></span>
+                            <span>Чат на сайте</span>
+                        </a>
+                        <a href="#" class="soc">
+                            <span class="soc2"><img src="img/telegram.svg" alt=""></span>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="#" class="soc">
+                            <span class="soc3"><img src="img/viber.svg" alt=""></span>
+                            <span>Viber</span>
+                        </a>
+
+                        <div class="telephones__block">
+                            <div class="telephone__ico"><img src="img/phone1.svg" alt=""></div>
+                            <div class="tel__content">
+                                <a href="tel:" class="telephone__number">099 3000 899</a>
+                                <span>з 10:00 до 19:00 (пн-нд)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="telephones__block">
+                            <div class="telephone__ico"><img src="img/phone1.svg" alt=""></div>
+                            <div class="tel__content">
+                                <a href="tel:" class="telephone__number">044 3000 899</a>
+                                <span>
+                                    Безкоштовно по Києву<br>
+                                    зі стаціонарних<br>
+                                    з 10:00 до 19:00 (пн-нд)
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="lang">
+                <a href="#" class="country">Укр</a>
+                <a href="#" class="country active">Рус</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="bottom-line">
+        <div class="container">
+            <div class="catalog__menu main-page hidden-menu">
+                <p class="catalog__back js-menu-back-one">Назад</p>
+                <ul class="catalog__list">
+                    <li class="catalog__item has-submenu">
+                        <a href="#" class="catalog__link"><img src="img/m1.svg" alt="">Автомагнитолы</a>
+                        <ul class="catalog__submenu__list" id="">
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Парковочные
+                                системы</a></li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Навигация</a>
+                            </li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Громкая
+                                связь</a></li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Радар
+                                - детекторы</a></li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#"
+                                                                           class="catalog__submenu__link">Рации</a></li>
+                            <li class="catalog__submenu__item has-sub3">
+                                <a href="#" class="catalog__submenu__link">Приборы и датчики</a>
+                                <ul class="submenu3__list" id="style-4">
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t1.png" alt="">
+                                            <span>Бортовые компьютеры</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t2.png" alt="">
+                                            <span>Салонные приборы</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t3.png" alt="">
+                                            <span>Алкотестеры</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t4.png" alt="">
+                                            <span>Манометры</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t5.png" alt="">
+                                            <span>Толщинометры</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t6.png" alt="">
+                                            <span>TPMS датчики давления в шинах</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t7.png" alt="">
+                                            <span>Тестеры напряжения</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t8.png" alt="">
+                                            <span>Ареометры</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t9.png" alt="">
+                                            <span>Тестеры напряжения</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t10.png" alt="">
+                                            <span>Ареометры</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t9.png" alt="">
+                                            <span>Тестеры напряжения</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t10.png" alt="">
+                                            <span>Ареометры</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Элементы
+                                питания</a></li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Флеш
+                                накопители</a></li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Парковочные
+                                системы</a></li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Флеш
+                                накопители</a></li>
+                            <li class="catalog__submenu__item"><a href="#" class="catalog__submenu__link">Установочные
+                                инструменты</a></li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Навигация</a>
+                            </li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Громкая
+                                связь</a></li>
+                            <li class="catalog__submenu__item"><a href="#" class="catalog__submenu__link">Установочные
+                                инструменты</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m2.svg"
+                                                                                                 alt="">Автоэлектроника</a>
+                    </li>
+                    <li class="catalog__item has-submenu">
+                        <a href="#" class="catalog__link"><img src="img/m3.svg" alt="">Аксессуары</a>
+                        <ul class="catalog__submenu__list" id="style-4">
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Парковочные
+                                системы</a></li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Навигация</a>
+                            </li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Громкая
+                                связь</a></li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Радар
+                                - детекторы</a></li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#"
+                                                                           class="catalog__submenu__link">Рации</a></li>
+                            <li class="catalog__submenu__item has-sub3">
+                                <a href="#" class="catalog__submenu__link">Приборы и датчики</a>
+                                <ul class="submenu3__list">
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t1.png" alt="">
+                                            <span>Бортовые компьютеры</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t2.png" alt="">
+                                            <span>Салонные приборы</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t3.png" alt="">
+                                            <span>Алкотестеры</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t4.png" alt="">
+                                            <span>Манометры</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t5.png" alt="">
+                                            <span>Толщинометры</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t6.png" alt="">
+                                            <span>TPMS датчики давления в шинах</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t7.png" alt="">
+                                            <span>Тестеры напряжения</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t8.png" alt="">
+                                            <span>Ареометры</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t9.png" alt="">
+                                            <span>Тестеры напряже��ия</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t10.png" alt="">
+                                            <span>Ареометры</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t9.png" alt="">
+                                            <span>Тестеры напряжения</span>
+                                        </a>
+                                    </li>
+                                    <li class="submenu3__item">
+                                        <a href="#" class="submenu3__link">
+                                            <img src="img/t10.png" alt="">
+                                            <span>Ареометры</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Элементы
+                                питания</a></li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Флеш
+                                накопители</a></li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Парковочные
+                                системы</a></li>
+                            <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Флеш
+                                накопители</a></li>
+                            <li class="catalog__submenu__item"><a href="#" class="catalog__submenu__link">Установочные
+                                инструменты</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m4.svg"
+                                                                                                 alt="">Видеорегистраторы</a>
+                    </li>
+                    <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m5.svg"
+                                                                                                 alt="">Кабели и
+                        комплектующие</a></li>
+                    <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m6.svg"
+                                                                                                 alt="">Охранные системы</a>
+                    </li>
+                    <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m7.svg"
+                                                                                                 alt="">Парковочные
+                        системы</a></li>
+                    <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m8.svg"
+                                                                                                 alt="">Сабвуферы</a>
+                    </li>
+                    <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m9.svg"
+                                                                                                 alt="">Свет</a></li>
+                    <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m10.svg"
+                                                                                                 alt="">Усилители и
+                        процессоры</a></li>
+                    <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m11.svg"
+                                                                                                 alt="">Акустика</a>
+                    </li>
+                    <li class="catalog__item"><a href="#" class="catalog__link"><img src="img/m12.svg" alt="">Лидер
+                        продаж</a></li>
+                    <li class="catalog__item"><a href="#" class="catalog__link"><img src="img/m14.svg"
+                                                                                     alt="">Новинки</a></li>
+                    <li class="catalog__item"><a href="#" class="catalog__link"><img src="img/m13.svg" alt="">Подарочные
+                        сертификаты</a></li>
+
+                </ul>
+            </div>
+            <button class="catalog-button" id="catalog-button">Каталог товаров</button>
+
+            <form action="" class="form__search">
+                <input type="text" class="search" placeholder="Поиск товаров">
+            </form>
+
+            <div class="enter">
+                <img src="img/user.svg" alt="">
+                <a href="#" data-hystmodal="#login" class="enter__link">Вход</a>
+                <span>|</span>
+                <a href="#" data-hystmodal="#checkIn" class="registration__link">Регистрация</a>
+            </div>
+
+            <div class="shop__items">
+                <a href="#" class="shop__item like"><!-- <img src="img/heart.svg" alt=""> --></a>
+                <div class="shop__item compare">
+                    <div class="cart__line"></div>
+                    <div class="compare__hidden">
+                        <ul class="top-menu">
+                            <li class="top-menu__item"><a href="#">Держатели телефонов (1)</a></li>
+                            <li class="top-menu__item"><a href="#">USB-накопители (2)</a></li>
+                            <li class="top-menu__item"><a href="#" c>SD карточки (1)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div href="#" class="shop__cart">
+                    <div class="cart__line"></div>
+                    <img src="img/cart.svg" alt="">
+                    <div class="shop__number">12</div>
+
+                    <div class="cart__hidden">
+                        <div class="cart__top">
+                            <span>Корзина</span>
+                            <span>12 товаров</span>
+                        </div>
+
+                        <div class="cart__product__list">
+
+                            <div class="cart__product__row">
+                                <div class="cart__product__img"><img loading="lazy" src="img/cart__product1.svg" alt="">
+                                </div>
+                                <div class="cart__product__content">
+                                    <a href="#" class="cart__product__link">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                    <div class="cart__product__bottom">
+                                        <span class="cart__pr">2 599 грн</span>
+                                        <span class="cart__pr">1 шт.</span>
+                                        <span class="cart__pr">2 599 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cart__product__row">
+                                <div class="cart__product__img"><img loading="lazy" src="img/cart__product2.svg" alt="">
+                                </div>
+                                <div class="cart__product__content">
+                                    <a href="#" class="cart__product__link">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                    <div class="cart__product__bottom">
+                                        <span class="cart__pr">2 599 грн</span>
+                                        <span class="cart__pr">1 шт.</span>
+                                        <span class="cart__pr">2 599 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cart__product__row">
+                                <div class="cart__product__img"><img loading="lazy" src="img/cart__product3.svg" alt="">
+                                </div>
+                                <div class="cart__product__content">
+                                    <a href="#" class="cart__product__link">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                    <div class="cart__product__bottom">
+                                        <span class="cart__pr">2 599 грн</span>
+                                        <span class="cart__pr">1 шт.</span>
+                                        <span class="cart__pr">2 599 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cart__product__row">
+                                <div class="cart__product__img"><img loading="lazy" src="img/cart__product1.svg" alt="">
+                                </div>
+                                <div class="cart__product__content">
+                                    <a href="#" class="cart__product__link">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                    <div class="cart__product__bottom">
+                                        <span class="cart__pr">2 599 грн</span>
+                                        <span class="cart__pr">1 шт.</span>
+                                        <span class="cart__pr">2 599 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__product__buttons">
+                            <a href="#" data-hystmodal="#modalCart" class="basket">Перейти в корзину</a>
+                            <a href="#" class="cart__order">Оформить заказ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<header class="mobile">
+    <div class="container">
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="logo__mobile"><img src="img/logo__mobile.svg" alt=""></div>
+
+        <div class="mobile__cart">
+
+            <div href="#" class="shop__cart">
+                <div class="cart__line"></div>
+                <img src="img/cart.svg" alt="">
+                <div class="shop__number">12</div>
+
+                <div class="cart__hidden">
+                    <div class="cart__top">
+                        <span>Корзина</span>
+                        <span>12 товаров</span>
+                    </div>
+
+                    <div class="cart__product__list">
+
+                        <div class="cart__product__row">
+                            <div class="cart__product__img"><img loading="lazy" src="img/cart__product1.svg" alt="">
+                            </div>
+                            <div class="cart__product__content">
+                                <a href="#" class="cart__product__link">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                <div class="cart__product__bottom">
+                                    <span class="cart__pr">2 599 грн</span>
+                                    <span class="cart__pr">1 шт.</span>
+                                    <span class="cart__pr">2 599 грн</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart__product__row">
+                            <div class="cart__product__img"><img loading="lazy" src="img/cart__product2.svg" alt="">
+                            </div>
+                            <div class="cart__product__content">
+                                <a href="#" class="cart__product__link">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                <div class="cart__product__bottom">
+                                    <span class="cart__pr">2 599 грн</span>
+                                    <span class="cart__pr">1 шт.</span>
+                                    <span class="cart__pr">2 599 грн</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart__product__row">
+                            <div class="cart__product__img"><img loading="lazy" src="img/cart__product3.svg" alt="">
+                            </div>
+                            <div class="cart__product__content">
+                                <a href="#" class="cart__product__link">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                <div class="cart__product__bottom">
+                                    <span class="cart__pr">2 599 грн</span>
+                                    <span class="cart__pr">1 шт.</span>
+                                    <span class="cart__pr">2 599 грн</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart__product__row">
+                            <div class="cart__product__img"><img loading="lazy" src="img/cart__product1.svg" alt="">
+                            </div>
+                            <div class="cart__product__content">
+                                <a href="#" class="cart__product__link">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                <div class="cart__product__bottom">
+                                    <span class="cart__pr">2 599 грн</span>
+                                    <span class="cart__pr">1 шт.</span>
+                                    <span class="cart__pr">2 599 грн</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="cart__product__buttons">
+                        <a href="#" class="basket">Перейти в корзину</a>
+                        <a href="#" class="cart__order">Оформить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="" class="form__search">
+            <input type="text" class="search" placeholder="Поиск товаров">
+        </form>
+    </div>
+</header>
+<div class="close"><img src="img/close.svg" alt=""></div>
+<div class="mobile__hidden">
+
+    <div class="mobile__hidden__top">
+        <div class="logo__mobile"><img src="img/logo__mobile.svg" alt=""></div>
+        <div class="lang">
+            <a href="#" class="country">Укр</a>
+            <a href="#" class="country active">Рус</a>
+        </div>
+        <div class="enter">
+            <img src="img/user.svg" alt="">
+            <a href="#" data-hystmodal="#login" class="enter__link">Вход</a>
+            <span>|</span>
+            <a href="#" data-hystmodal="#checkIn" class="registration__link">Регистрация</a>
+        </div>
+    </div>
+
+    <button class="catalog-button mob-catalog-btn" id="catalog-button">Каталог товаров</button>
+
+    <div class="mobile__menu">
+        <ul>
+            <li><a href="#" class="">Подарочные сертификаты</a></li>
+            <li><a href="#" class="">Акции</a></li>
+            <li><a href="#" class="">О компании</a></li>
+            <li class="parrent">
+                <a href="#" class="">Покупателям <span class="aft"><img src="img/arrow__up.svg" alt=""></span></a>
+                <ul class="sub__parrent">
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Обмен и возврат</a></li>
+                    <li><a href="#">Дополнительная</a></li>
+                    <li><a href="#">Бонусная программа</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="">Контакти</a></li>
+        </ul>
+        <div class="mobile__menu_tel">
+            0800 330 899
+        </div>
+        <a href="#" class="mobile__shop_item tel">Перезвонить мне</a>
+        <a href="#" class="mobile__shop_item like">Желаемое</a>
+        <a href="#" class="mobile__shop_item compare">Сравнение <span class="shop__number">12</span></a>
+    </div>
+
+    <div class="mob-catalog catalog__menu hidden-menu">
+        <p class="catalog__back menu-back">Назад</p>
+        <ul class="catalog__list">
+            <li class="catalog__item has-submenu">
+                <a href="#" class="catalog__link"><img src="img/m1.svg" alt="">Автомагнитолы</a>
+                <ul class="catalog__submenu__list" id="">
+                    <p class="catalog__back submenu-back">Назад</p>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Парковочные системы</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Навигация</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Громкая связь</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Радар - детекторы</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Рации</a></li>
+                    <li class="catalog__submenu__item has-sub3">
+
+                        <a href="#" class="catalog__submenu__link">Приборы и датчики</a>
+                        <ul class="submenu3__list" id="style-4">
+                            <p class="catalog__back submenu3-back">Назад</p>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t1.png" alt="">
+                                    <span>Бортовые компьютеры</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t2.png" alt="">
+                                    <span>Салонные приборы</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t3.png" alt="">
+                                    <span>Алкотестеры</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t4.png" alt="">
+                                    <span>Манометры</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t5.png" alt="">
+                                    <span>Толщинометры</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t6.png" alt="">
+                                    <span>TPMS датчики давления в шинах</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t7.png" alt="">
+                                    <span>Тестеры напряжения</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t8.png" alt="">
+                                    <span>Ареометры</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t9.png" alt="">
+                                    <span>Тестеры напряжения</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t10.png" alt="">
+                                    <span>Ареометры</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t9.png" alt="">
+                                    <span>Тестеры напряжения</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t10.png" alt="">
+                                    <span>Ареометры</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Элементы питания</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Флеш накопители</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Парковочные системы</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Флеш накопители</a></li>
+                    <li class="catalog__submenu__item"><a href="#" class="catalog__submenu__link">Установочные инструменты</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Навигация</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Громкая связь</a></li>
+                    <li class="catalog__submenu__item"><a href="#" class="catalog__submenu__link">Установочные инструменты</a></li>
+                </ul>
+            </li>
+            <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m2.svg" alt="">Автоэлектроника</a></li>
+            <li class="catalog__item has-submenu">
+
+                <a href="#" class="catalog__link"><img src="img/m3.svg" alt="">Аксессуары</a>
+                <ul class="catalog__submenu__list" id="style-4">
+                    <p class="catalog__back submenu-back">Назад</p>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Парковочные системы</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Навигация</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Громкая связь</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Радар - детекторы</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Рации</a></li>
+                    <li class="catalog__submenu__item has-sub3">
+                        <a href="#" class="catalog__submenu__link">Приборы и датчики</a>
+                        <ul class="submenu3__list">
+                            <p class="catalog__back submenu3-back">Назад</p>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t1.png" alt="">
+                                    <span>Бортовые компьютеры</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t2.png" alt="">
+                                    <span>Салонные приборы</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t3.png" alt="">
+                                    <span>Алкотестеры</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t4.png" alt="">
+                                    <span>Манометры</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t5.png" alt="">
+                                    <span>Толщинометры</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t6.png" alt="">
+                                    <span>TPMS датчики давления в шинах</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t7.png" alt="">
+                                    <span>Тестеры напряжения</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t8.png" alt="">
+                                    <span>Ареометры</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t9.png" alt="">
+                                    <span>Тестеры напряжения</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t10.png" alt="">
+                                    <span>Ареометры</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t9.png" alt="">
+                                    <span>Тестеры напряжения</span>
+                                </a>
+                            </li>
+                            <li class="submenu3__item">
+                                <a href="#" class="submenu3__link">
+                                    <img src="img/t10.png" alt="">
+                                    <span>Ареометры</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Элементы питания</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Флеш накопители</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Парковочные системы</a></li>
+                    <li class="catalog__submenu__item has-sub3"><a href="#" class="catalog__submenu__link">Флеш накопители</a></li>
+                    <li class="catalog__submenu__item"><a href="#" class="catalog__submenu__link">Установочные инструменты</a></li>
+                </ul>
+            </li>
+            <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m4.svg" alt="">Видеорегистраторы</a></li>
+            <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m5.svg" alt="">Кабели и комплектующие</a></li>
+            <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m6.svg" alt="">Охранные системы</a></li>
+            <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m7.svg" alt="">Парковочные системы</a></li>
+            <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m8.svg" alt="">Сабвуферы</a></li>
+            <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m9.svg" alt="">Свет</a></li>
+            <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m10.svg" alt="">Усилители и процессоры</a></li>
+            <li class="catalog__item has-submenu"><a href="#" class="catalog__link"><img src="img/m11.svg" alt="">Акустика</a></li>
+            <li class="catalog__item"><a href="#" class="catalog__link"><img src="img/m12.svg" alt="">Лидер продаж</a></li>
+            <li class="catalog__item"><a href="#" class="catalog__link"><img src="img/m14.svg" alt="">Новинки</a></li>
+            <li class="catalog__item"><a href="#" class="catalog__link"><img src="img/m13.svg" alt="">Подарочные сертификаты</a></li>
+
+        </ul>
+    </div>
+
+
+</div>
+
+<main class="main-margin">
+    <section class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__container">
+                <li><a href="#">Главная</a></li>
+                <li class="active">О компании</li>
+            </ul>
+        </div>
+    </section>
+    <div class="container container-profile">
+        <div class="row">
+            <aside class="col-3 column-left column-left__profile">
+                <div class="sc-bg sidebar__user">
+                    <ul class="user__nav">
+                        <li class="user__nav_item active"><a href="#">О компании</a></li>
+                        <li class="user__nav_item"><a href="#">Контакты</a></li>
+                        <li class="user__nav_item"><a href="#">Доставка</a></li>
+                        <li class="user__nav_item"><a href="#">Оплата</a></li>
+                        <li class="user__nav_item"><a href="#">Гарантия</a></li>
+                        <li class="user__nav_item"><a href="#">Обмен и возврат</a></li>
+                        <li class="user__nav_item"><a href="#">Дополнительная гарантия</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="col-9 content content-profile">
+                <div class="sc-bg">
+                    <div class="slider__header">
+                        <h1 class="slider__header__title about-us__title">Carmedia</h1>
+                    </div>
+                    <div class="about-us__body">
+                        <p>Carmedia - крупнейшая сеть магазинов и интернет-магазин по продаже автотоваров в Украине. Наша основная цель, сделать Вашу покупку максимально удобной и выгодной! Удобное месторасположение магазинов, специальные ценовые предложения, а также самый большой выбор автотоваров в Украине позволяет сделать Ваши покупки быстрыми и удобными! В ассортименте магазинов "AUTOBAZA" постоянно присутствуют высокотехнологичные товары и новинки рынка. Квалифицированные специалисты как в магазине так и в колл центре смогут помочь подобрать оптимальный товар под Ваше авто.Миссия компании: "Помогая другим, развиваемся сами!"</p>
+                        <img class="article-one__img" src="img/aboutus.jpg" alt="">
+                        <h4>Наша цель — быть полезными</h4>
+                        <p>Мы верим, что вещи существуют для того, чтобы делать жизнь проще, приятнее и добрее. Поэтому и поиск той самой вещи должен быть быстрым, удобным и приятным. Мы не просто продаем бытовую технику, электронику, украшения или вино. Мы помогаем найти именно то, что нужно, в одном месте и без лишних волнений, чтобы вы не тратили жизнь на поиски, а просто жили счастливо. Rozetka — это универсальный ответ на любой запрос, начало поиска и его конечная остановка, настоящий помощник. Мы навсегда избавляем своих покупателей от неприятных компромиссов, исполняем желания и позволяем мечтать смелее. Благодаря разумному поиску и честному сервису мы делаем жизнь наших клиентов немножко лучше прямо сейчас.</p>
+                        <h4>Чтобы мечты осуществлялись легко</h4>
+                        <p>Мы открываем огромные офлайн-магазины, чтобы вы могли прийти, подержать в руках и протестировать понравившийся продукт. Мы хотим, чтобы у нас был лучший в мире сервис, поэтому обучаем сотрудников не только технической стороне работы, но и работе с клиентом. А если вам, наоборот, хочется поменьше общаться с людьми — для этого у нас есть почтоматы: сделали заказ, выбрали почтомат, забрали по дороге домой или на работу. Всё.</p>
+                        <div class="about-us__info">
+                            <div class="sale__count">
+                                <p class="red">3.9 млн <span>доступных к покупке товаров</span></p>
+                                <p class="red">789 млн<span>пользователей посетили Rozetka в 2018 году</span></p>
+                                <p class="red"> 2.5 млн<span>посетителей в день</span></p>
+                                <p class="red">81%<span>наших покупателей возвращаются</span></p>
+                            </div>
+                        </div>
+                        <h1 class="slider__header__title about-us__title">Почему выбирают нас</h1>
+                        <h5><img src="img/serve.svg" alt="">Сервис и профессионализм</h5>
+                        <p>Мы специализируемся на автотоварах, поэтому одним из главных приоритетов для нас является сопровождение клиента профессиональной технической и сервисной поддержкой на самом высшем уровне. Для этого, мы каждый день работаем над усовершенствованием качества обслуживания клиентов, задаем планку сервиса и профессионализма все выше.</p>
+                        <h5><img src="img/serve.svg" alt="">Быстрая и удобная доставка</h5>
+                        <p>Мы знаем это чувство, когда только что заказанный товар хочется заполучить как можно скорее. А если забрать свой заказ с ближайшего магазина не получается, то для таких случаев, мы организовали гибкую систему доставки заказа самыми быстрыми, удобными и выгодными курьерскими службами Украины. Доставка по Киеву или в отдаленый уголок страны -  не важно! Мы сделаем всё возможное, чтобы Вы получили свой товар в максимально короткий срок, с наименьшими затратами и в самый удобный способ для Вас.</p>
+                        <h5><img src="img/serve.svg" alt="">Широкий каталог товаров</h5>
+                        <p>Наша цель - предоставить клиентам весь спектр качественных автомобильных и около автомобильных товаров в одном месте, потому наш ассортимент поистине велик - более 200 тысяч товаров в каталоге! И это количество с каждым днем растет. Автоэлектроника, звук и видео, фары и свет, инструменты, автохимия, масло, запчасти и расходники, автотуризми и джиппинг - далеко не полный перечень нашего каталога. У нас представлены самые лучшие и топовые бренды производителей: Pioneer, Alpine, JBL, Focal, Garmin, Bosch, Philips, Thule, Motul,Castrol, Mobil и сотни других проверенных десятком лет. Мы уверены, что в нашем магазине Вы найдете всё необходимое для своего любимого авто.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <div class="container">
+
+        <div class="footer__row">
+
+            <div class="footer__item">
+                <div class="footer__logo"><img src="img/footer__logo.svg" alt=""></div>
+                <div class="footer__copy">© Интернет-магазин Carmedia -<br>автоэлектроника 2006 - 2021</div>
+
+                <div class="banks">
+                    <div class="banks__title">Мы принимаем</div>
+                    <div class="banks__row">
+                        <div class="bank"><img src="img/visa.svg" alt=""></div>
+                        <div class="bank"><img src="img/mastercard.svg" alt=""></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer__item">
+                <div class="menu__title">Информация</div>
+                <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Бренды</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Публичная оферта</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__item">
+                <div class="menu__title">Покупателям</div>
+                <ul>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Обмен и возврат</a></li>
+                    <li><a href="#">Дополнительная гарантия</a></li>
+                    <li><a href="#">Бонусная программа</a></li>
+                    <li><a href="#">Подарочные сертификаты</a></li>
+                    <li><a href="#">Акции</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__item">
+                <div class="menu__title">Телефоны</div>
+                <div class="numbers">
+                    <a href="tel:" class="">0800 330 899</a>
+                    <a href="tel:" class="">044 3000 899</a>
+                </div>
+                <div class="graf">
+                    <div class="graf__title">График работы</div>
+                    <div class="graf__time">10:00 — 19:00<br>Без выходных</div>
+                </div>
+                <a href="#" class="write">Написать директору</a>
+            </div>
+
+            <div class="footer__item">
+                <div class="menu__title">Следите за нами</div>
+                <div class="footer__socials">
+                    <a href="#" class="soc s1"><img src="img/s1.svg" alt=""></a>
+                    <a href="#" class="soc s2"><img src="img/s2.svg" alt=""></a>
+                    <a href="#" class="soc s3"><img src="img/s3.svg" alt=""></a>
+                    <a href="#" class="soc s4"><img src="img/s4.svg" alt=""></a>
+                    <a href="#" class="soc s5"><img src="img/s5.svg" alt=""></a>
+                </div>
+                <div class="subscribe__title">Подписаться на рассылку</div>
+
+                <form action="" class="subscribe">
+                    <input type="text" placeholder="Ваш email...">
+                    <button>Подписаться</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+<div class="footer__mobile">
+    <div class="container">
+
+        <div class="subscribe__title">Подписаться на рассылку</div>
+
+        <form action="" class="subscribe">
+            <input type="text" placeholder="Ваш email...">
+            <button>Подписаться</button>
+        </form>
+
+        <div class="infos">
+
+            <div>
+                <div class="info__block">Информация</div>
+                <div class="info__hidden">
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Бренды</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Публичная оферта</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info__block">Покупателям</div>
+            <div class="info__hidden">
+                <ul>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Обмен и возврат</a></li>
+                    <li><a href="#">Дополнительная гарантия</a></li>
+                    <li><a href="#">Бонусная программа</a></li>
+                    <li><a href="#">Подарочные сертификаты</a></li>
+                    <li><a href="#">Акции</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+
+            <div class="menu__title">Телефоны</div>
+            <div class="numbers">
+                <a href="tel:" class="">0800 330 899</a>
+                <a href="tel:" class="">044 3000 899</a>
+            </div>
+            <div class="graf">
+                <div class="graf__title">График работы</div>
+                <div class="graf__time">10:00 — 19:00<br>Без выходных</div>
+            </div>
+            <a href="#" class="write">Написать директору</a>
+
+            <div class="menu__title">Следите за нами</div>
+            <div class="footer__socials">
+                <a href="#" class="soc s1"><img src="img/s1.svg" alt=""></a>
+                <a href="#" class="soc s2"><img src="img/s2.svg" alt=""></a>
+                <a href="#" class="soc s3"><img src="img/s3.svg" alt=""></a>
+                <a href="#" class="soc s4"><img src="img/s4.svg" alt=""></a>
+                <a href="#" class="soc s5"><img src="img/s5.svg" alt=""></a>
+            </div>
+
+            <div class="footer__copy">© Интернет-магазин Carmedia -<br>автоэлектроника 2006 - 2021</div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+<!-- <a data-fancybox data-src="#hidden-content" href="javascript:;" class="btn__order">Заказать звонок</a> -->
+<div style="display: none;" id="hidden-content">
+	
+</div>
+
+<!-- Pop-up окна -->
+<div class="hystmodal" id="login" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__window modal__window_login hystmodal__window" role="dialog" aria-modal="true">
+            <button  class="modal__window_close btn-close" data-hystclose class="hystmodal__close"></button>
+            <div class="modal__body modal__body_step-one">
+                <div class="section__title">Вход | Регистрация</div>
+                <form class="form form__login">
+                    <label class="form__block require">
+                        <p>Телефон <span>*</span></p>
+                        <input class="form__input" type="tel" placeholder="+380">
+                    </label>
+                    <button class="btn btn-primary btn-submit" type="submit">Войти</button>
+                    <div class="form__check check">
+                        <input id="check" type="checkbox">
+                        <label for="check">
+                         Регистрируясь, вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+                        </label>
+                    </div>
+                </form>
+                
+                <div class="text-line">
+                    или
+                </div>
+                <div class="social__login">
+                     <p>Войдите через соц. сети:</p>
+                     <div class="btn__block">
+                         <a href="#" class="btn btn-social">
+                             <img src="icons/facebook.svg" alt="">
+                             Facebook</a>
+                         <a href="#" class="btn btn-social">
+                             <img src="icons/google.svg" alt="">
+                             Google</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="checkIn"  aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__window modal__window_login hystmodal__window" role="dialog" aria-modal="true">
+            <button  class="modal__window_close btn-close" data-hystclose class="hystmodal__close"></button>
+            <div class="modal__body modal__body_step-two">
+                <div class="section__title">Вход | Регистрация</div>
+                <p class="form__login_info">Введите код из SMS/Viber присланный на <span>+380997801655</span></p>
+                <form class="form form__login">
+                    <label class="form__block require">
+                        <p>Код <span>*</span></p>
+                        <input class="form__input form__input-password" type="password" placeholder="****">
+                    </label>
+                    <div class="form__line">
+                        <div class="form__check form__check-remember check">
+                            <input id="check1" type="checkbox">
+                            <label for="check1">Запомнить меня</label>
+                        </div>
+                        <button class="btn btn-edit btn-edit_grey">
+                            Выслать код еще раз
+                        </button>
+                    </div>
+                    <button class="btn btn-primary btn-submit" type="submit">Войти</button>
+                   
+                </form>
+                
+                <button class="btn btn-edit">
+                    Изменить номер телефона
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="modalCart"  aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__window modal__window_cart hystmodal__window" role="dialog" aria-modal="true">
+            <button  class="modal__window_close btn-close" data-hystclose class="hystmodal__close"></button>
+            <div class="modal__body modal__body_cart">
+                <div class="section__title">Корзина</div>
+                <div class="modal__cart_list cart__list">
+                    <div class="cart__list_item pr__card">
+                        <div class="btn-close_cart"></div>
+                        <div class="pr__card_img">
+                            <img loading="lazy" src="img/pr-card-100.png" alt="">
+                        </div>
+                        <div class="pr__card_content">
+                            <div class="pr__card_content-head">
+                                <a href="#" class="pr__card_title">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                <div class="pr__card_code">Код: 1445953</div>
+                            </div>
+                            <div class="pr__card_content-add">+ Расширенная гарантия</div>
+                            <div class="pr__card_bottom">
+                                <div class="pr__card_cost pr__card_cost-sale">
+                                    <span class="old-cost">1 359 грн</span>
+                                    2 599 грн</div>
+                                <div class="pr__card_cost-total">
+                                    <div class="pr__card_count product-buy__quantity">
+                                        <button class="quantity_btn quantity_btn-minus quantity-min">
+                                            <img src="icons/minus.svg" alt="">
+                                        </button>
+                                        <input class="quantity-input" type="text" name="quantity" value="1" size="2" id="input-quantity" placeholder="">
+                                        <input type="hidden" name="product_id" value="565">
+                                        <button class="quantity_btn quantity_btn-plus quantity-max">
+                                            <img src="icons/plus.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="pr__card_cost">2 599 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__list_item pr__card">
+                        <div class="btn-close_cart"></div>
+                        <div class="pr__card_img">
+                            <img loading="lazy" src="img/pr-card-100-2.png" alt="">
+                        </div>
+                        <div class="pr__card_content">
+                            <div class="pr__card_content-head">
+                                <a href="#" class="pr__card_title">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                <div class="pr__card_code">Код: 1445953</div>
+                            </div>
+                            <div class="pr__card_bottom">
+                                <div class="pr__card_cost">
+                                    2 599 грн</div>
+                                <div class="pr__card_cost-total">
+                                    <div class="pr__card_count product-buy__quantity">
+                                        <button class="quantity_btn quantity_btn-minus quantity-min">
+                                            <img src="icons/minus.svg" alt="">
+                                        </button>
+                                        <input class="quantity-input" type="text" name="quantity" value="1" size="2" id="input-quantity" placeholder="">
+                                        <input type="hidden" name="product_id" value="565">
+                                        <button class="quantity_btn quantity_btn-plus quantity-max">
+                                            <img src="icons/plus.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="pr__card_cost">2 599 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__list_item pr__card">
+                        <div class="btn-close_cart"></div>
+                        <div class="pr__card_img">
+                            <img loading="lazy" src="img/pr-card-100-3.png" alt="">
+                        </div>
+                        <div class="pr__card_content">
+                            <div class="pr__card_content-head">
+                                <a href="#" class="pr__card_title">Автомобільна Акустика JBL STAGE 3 9637</a>
+                                <div class="pr__card_code">Код: 1445953</div>
+                            </div>
+                            <div class="pr__card_bottom">
+                                <div class="pr__card_cost">
+                                    2 599 грн</div>
+                                <div class="pr__card_cost-total">
+                                    <div class="pr__card_count product-buy__quantity">
+                                        <button class="quantity_btn quantity_btn-minus quantity-min">
+                                            <img src="icons/minus.svg" alt="">
+                                        </button>
+                                        <input class="quantity-input" type="text" name="quantity" value="1" size="2" id="input-quantity" placeholder="">
+                                        <input type="hidden" name="product_id" value="565">
+                                        <button class="quantity_btn quantity_btn-plus quantity-max">
+                                            <img src="icons/plus.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="pr__card_cost">2 599 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__total">
+                    <p>Итого:<span class="new__price">2310 грн</span></p>
+                </div>
+                <div class="cart__product__buttons">
+                    <a href="#" data-hystmodal="#modalCart" class="btn basket">Продолжить покупки</a>
+                    <a href="#" class="btn cart__order">Оформить заказ</a>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <div class="modal__footer_item modal__footer_title">
+                    <p class="title">Или заказать по телефону</p>
+                    <p class="info">Мы перезвоним Вам в течение 10 минут. Или оформите заказ на сайте самостоятельно всего за 2 минуты.</p>
+                </div>
+                <div class="modal__footer_item modal__footer_form">
+                    <form class="form__oneclick">
+                        <label for="telClick">Телефон:</label>
+                        <p>
+                            <input type="tel" name="tel" id="telClick" class="form__input" placeholder="+38 (0__) - ___- __ - __ ">
+                       
+                             <button  class="btn btn-oneclick">Купить в 1 клик</button>
+                        </p>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="cashback"  aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__window  hystmodal__window" role="dialog" aria-modal="true">
+            <button  class="modal__window_close btn-close" data-hystclose class="hystmodal__close"></button>
+            <div class="modal__body modal__body_info">
+                <div class="section__title">Cashback</div>
+               <p>CashBack — после покупки, через 14 дней, мы начислим бонусы к Вам на счет!
+                Расплачиваться можно хоть все 100% цены товара
+                Узнать свой бонусный баланс можно в личном кабинете
+                Хватит терпения накопить на Porsche ;) ?!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="addNewRewiev" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__window modal__window_login hystmodal__window" role="dialog" aria-modal="true">
+            <button  class="modal__window_close btn-close" data-hystclose class="hystmodal__close"></button>
+            <div class="modal__body modal__body_step-one">
+                <div class="section__title">Оставить отзыв</div>
+                <form class="form form__login">
+                    <label class="form__block require">
+                        <p>Имя <span>*</span></p>
+                        <input class="form__input" type="text">
+                    </label>
+                    <label class="form__block require">
+                        <p>Email</p>
+                        <input class="form__input" type="email">
+                    </label>
+                    <label class="form__block require">
+                        <p>Ваш отзыв <span>*</span></p>
+                        <textarea name="text" class="form__input" ></textarea>
+                    </label>
+                    <label class="form__block rating__block require">
+                        <p>Ваша оценка<span>*</span></p>
+                        <div class="form__rating">
+                            <svg class="star">
+                                <clipPath id="star" clipPathUnits="objectBoundingBox"><path d="M0.54,0.037 L0.667,0.353 L0.993,0.382 C1,0.384,1,0.414,1,0.429 L0.761,0.654 L0.835,0.988 C0.84,1,0.816,1,0.796,1 L0.517,0.84 L0.237,1 C0.217,1,0.193,1,0.198,0.988 L0.272,0.654 L0.025,0.429 C0.008,0.414,0.017,0.384,0.04,0.382 L0.366,0.353 L0.493,0.037 C0.502,0.015,0.531,0.015,0.54,0.037"></path></clipPath>
+                            </svg>
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label for="star-1"></label>
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label for="star-2"></label>
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label for="star-3"></label>
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label for="star-4"></label>
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label for="star-5"></label>
+                        </div>
+                    </label>
+                    
+                    <button class="btn btn-primary btn-submit" type="submit">Оставить отзыв</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="buyOneClick" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__window modal__window_login hystmodal__window" role="dialog" aria-modal="true">
+            <button  class="modal__window_close btn-close" data-hystclose class="hystmodal__close"></button>
+            <div class="modal__body modal__body_step-one">
+                <div class="section__title">Купить в 1 клик</div>
+                <form class="form form__login">
+                    <label class="form__block require">
+                        <p>Имя <span>*</span></p>
+                        <input class="form__input" type="text">
+                    </label>
+                    <label class="form__block require">
+                        <p>Телефон <span>*</span></p>
+                        <input class="form__input" type="email">
+                    </label>
+                    
+                    <button class="btn btn-primary btn-submit" type="submit">Купить</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="addCommentCart"  aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__window modal__window_login hystmodal__window" role="dialog" aria-modal="true">
+            <button  class="modal__window_close btn-close" data-hystclose class="hystmodal__close"></button>
+            <div class="modal__body modal__body_step-two">
+                <div class="section__title">Добавить комментарии к заказу</div>
+                
+                <form class="form form__login">
+                    <label class="form__block require">
+                        <p>Коментарий</p>
+                        <textarea name="text" class="form__input" ></textarea>
+                    </label>
+                    
+                    <button class="btn btn-primary btn-submit" type="submit">Оставить отзыв</button>
+                    
+                </form>
+                
+                <button class="btn btn-edit">
+                    Изменить номер телефона
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hystmodal" id="addNewQuestion" aria-hidden="true">
+    <div class="modal__wrap hystmodal__wrap">
+        <div class="modal__window modal__window_login hystmodal__window" role="dialog" aria-modal="true">
+            <button  class="modal__window_close btn-close" data-hystclose class="hystmodal__close"></button>
+            <div class="modal__body modal__body_step-one">
+                <div class="section__title">Задать вопрос</div>
+                <form class="form form__login">
+                    <label class="form__block require">
+                        <p>Имя <span>*</span></p>
+                        <input class="form__input" type="text">
+                    </label>
+                    <label class="form__block require">
+                        <p>Email</p>
+                        <input class="form__input" type="email">
+                    </label>
+                    <label class="form__block require">
+                        <p>Задать вопрос <span>*</span></p>
+                        <textarea name="text" class="form__input" ></textarea>
+                    </label>
+                    <label class="form__block rating__block require">
+                        <p>Ваша оценка<span>*</span></p>
+                        <div class="form__rating">
+                            <svg class="star">
+                                <clipPath id="star" clipPathUnits="objectBoundingBox"><path d="M0.54,0.037 L0.667,0.353 L0.993,0.382 C1,0.384,1,0.414,1,0.429 L0.761,0.654 L0.835,0.988 C0.84,1,0.816,1,0.796,1 L0.517,0.84 L0.237,1 C0.217,1,0.193,1,0.198,0.988 L0.272,0.654 L0.025,0.429 C0.008,0.414,0.017,0.384,0.04,0.382 L0.366,0.353 L0.493,0.037 C0.502,0.015,0.531,0.015,0.54,0.037"></path></clipPath>
+                            </svg>
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label for="star-1"></label>
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label for="star-2"></label>
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label for="star-3"></label>
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label for="star-4"></label>
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label for="star-5"></label>
+                        </div>
+                    </label>
+                    
+                    <button class="btn btn-primary btn-submit" type="submit">Оставить отзыв</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+	<script src="js/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+	<script src="js/hystmodal.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+	<script defer="defer" src="js/scripts.js"></script>    
+    
+
+
+	
+
+<div class="back__catalog"></div>
+</body>
+</html>
