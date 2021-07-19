@@ -219,7 +219,7 @@ hr {
     }
 
     &-more {
-        margin-top: 40px;
+        margin-top: 19px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -624,17 +624,33 @@ hr {
     border-radius: 5px;
     width: fit-content;
     overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid rgba(189, 189, 215, 0.2);
+    border-bottom: none;
 
     .nav-link::before {
         content: "";
         position: absolute;
-        top: 95%;
+        top: 100%;
         left: 50%;
         width: 0;
         height: 2px;
         background: linear-gradient(90deg, #FF2517 0%, #FF5F1B 100%);
         transition: .3s left linear,.3s width linear;
         z-index: 400;
+    }
+    .nav-item {
+        margin-right: 0;
+    }
+    .nav-link {
+        padding-left: 28px !important;
+        padding-right: 28px !important;
+
+        border-bottom: 2px solid rgba(189, 189, 215, 0.2);
+        &.active {
+            background: rgba(189, 189, 215, 0.2) !important;
+        }
+
     }
 
 }

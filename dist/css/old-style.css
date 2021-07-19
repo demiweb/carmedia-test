@@ -40,6 +40,7 @@ body {
 }
 body::-webkit-scrollbar {
   display: none;
+  all: unset;
 }
 .container {
   max-width: 1424px;
@@ -1588,17 +1589,41 @@ header {
   margin: 0;
   position: absolute;
   top: 0;
+  /*max-height: 100%;*/
+  /*overflow-y: auto;*/
   -webkit-transform: translate(100%, 0);
           transform: translate(100%, 0);
   visibility: hidden;
+  /*overflow-x: visible !important;*/
   opacity: 0;
   width: 281px;
   /*max-height: 532px;*/
   -webkit-box-shadow: 0px 6px 10px rgba(24, 46, 72, 0.1);
           box-shadow: 0px 6px 10px rgba(24, 46, 72, 0.1);
 }
+.catalog__menu .catalog__submenu__list::-webkit-scrollbar {
+ all: unset;
+  height: 0;
+}
+
+.catalog__menu .catalog__submenu__list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(73, 73, 86, 0.14);
+  background-color: rgba(35, 35, 49, 0.08);
+}
+.catalog__menu .catalog__submenu__list::-webkit-scrollbar {
+  width: 2px;
+  background-color: rgba(35, 35, 49, 0.08);
+}
+.catalog__menu .catalog__submenu__list::-webkit-scrollbar-thumb {
+  background-color: rgba(73, 73, 86, 0.14);
+  border: 2px solid rgba(35, 35, 49, 0.08);
+  height: 107px;
+}
 .catalog__menu .catalog__submenu__list .catalog__submenu__item {
   list-style-type: none;
+}
+.catalog__menu .catalog__submenu__list .catalog__submenu__item:first-child {
+  padding-top: 11px;
 }
 .catalog__menu .catalog__submenu__list .catalog__submenu__item .catalog__submenu__link {
   color: #000000;
@@ -1668,6 +1693,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 532px;
+max-height: 512px;
   overflow-y: scroll;
 }
 .catalog__menu .submenu3__list .submenu3__item {
@@ -2805,11 +2831,13 @@ header {
   margin-bottom: 2px;
 }
 .cat-right__left .section__cat:nth-child(2) {
-  width: 33.33%;
+  width: calc(33.33% - 2px);
+  margin-bottom: 2px;
+  margin-left: 2px;
 }
 .cat-right__left .section__cat:nth-child(2) img {
-  margin-left: 2px;
-  margin-bottom: 2px;
+  /*margin-left: 2px;*/
+  /*margin-bottom: 2px;*/
 }
 .cat-right__right {
   width: 100%;
@@ -2840,7 +2868,7 @@ header {
 }
 .cat-right__right .rr__block .section__cat {
   width: 100%;
-  height: 50%;
+  height: calc(50% - 1px);
 }
 .cat-right__right .rr__block .section__cat img {
   display: -webkit-box;
@@ -2848,8 +2876,11 @@ header {
   display: flex;
   height: auto;
 }
-.cat-right__right .rr__block .section__cat:nth-child(1) img {
+.cat-right__right .rr__block .section__cat:nth-child(1) {
   margin-bottom: 2px;
+}
+.cat-right__right .rr__block .section__cat:nth-child(1) img {
+  /*margin-bottom: 2px;*/
 }
 .section__cat {
   position: relative;

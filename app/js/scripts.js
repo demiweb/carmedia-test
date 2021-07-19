@@ -72,20 +72,36 @@ if (window.innerWidth < 1024) {
         })
     })
 
-    $('.has-submenu > a').click(
-        function (e) {
-            e.preventDefault();
-            $(this).closest('.has-submenu').addClass('active')
+    // $('.has-submenu > a').click(
+    //     function (e) {
+    //         e.preventDefault();
+    //         $(this).closest('.has-submenu').addClass('active')
+    //     }
+    // );
+
+    let subMenusA = [...document.querySelectorAll('.has-submenu > a')];
+
+    function subMenusOpeners() {
+        if (!subMenusA.length) {
+
+        } else {
+            subMenusA.forEach((btn) => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    btn.closest('.has-submenu').classList.add('active');
+                })
+            })
         }
-    );
-    $('.has-sub3').click(
-        function () {
-            $(this).find('.submenu3__list').addClass('active')
-        },
-        function () {
-            $(this).find('.catalog__submenu__list').removeClass('active')
-        }
-    );
+    }
+    subMenusOpeners();
+    // $('.has-sub3').click(
+    //     function () {
+    //         $(this).find('.submenu3__list').addClass('active')
+    //     },
+    //     function () {
+    //         $(this).find('.catalog__submenu__list').removeClass('active')
+    //     }
+    // );
 
     $('.menu-back').click(
         function () {
@@ -697,6 +713,7 @@ $('.thumb-slider').slick({
                 centerMode: true,
                 slidesToShow: 1,
                 arrows: true,
+                variableWidth: true,
                 dots: true,
                 vertical: false,
                 asNavFor: false,

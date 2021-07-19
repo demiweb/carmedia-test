@@ -1872,7 +1872,7 @@ select.form__input option:first {
 
 .slider__header.title__contant {
     margin-top: 46px;
-    margin-bottom: 40px;
+    margin-bottom: 27px;
 }
 
 .title__contant {
@@ -2674,7 +2674,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
         span {
             font-weight: normal;
-            font-size: 10px;
+            font-size: 14px;
             line-height: 1;
             text-align: center;
             color: #000000;
@@ -5202,8 +5202,68 @@ table.history-title__main {
 
 
 
-input, a {
+input, a, ::-webkit-scrollbar {
     -webkit-appearance: none !important;
+}
+
+
+.col-xl-9.content {
+    flex-grow: 1;
+}
+
+.main__slider__row {
+    .catalog__menu {
+        top: 0;
+        z-index: 1;
+    }
+}
+#infoDelivery {
+    .form__login {
+        margin-bottom: 14px;
+    }
+}
+
+.addtocart {
+    &.active {
+        position: relative;
+        background:linear-gradient(90deg, rgba(255, 37, 23, 0.2) 0%, rgba(255, 95, 27, 0.2) 100%) ;
+        img {
+            filter: brightness(50%) sepia(100) saturate(100) hue-rotate(25deg);
+        }
+        &::after {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            transform: translate(40%, -50%);
+            align-items: center;
+            justify-content: center;
+            background: url('../img/ar-g-3-2.svg') no-repeat center, #FF2517 ;
+            background-size: 10px;
+
+        }
+    }
+}
+
+.pr__slide.pr__slide--not-available {
+    .pr__img {
+        opacity: 0.3;
+    }
+    .product__availability--not {
+        margin-bottom: 14px;
+    }
+    .btn-info-delivery {
+        width: 44px;
+        height: 44px;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        background-position: center;
+    }
 }
 
 

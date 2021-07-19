@@ -1575,6 +1575,9 @@ header {
 .catalog__menu .catalog__submenu__list .catalog__submenu__item {
   list-style-type: none;
 }
+.catalog__menu .catalog__submenu__list .catalog__submenu__item:first-child {
+  padding-top: 11px;
+}
 .catalog__menu .catalog__submenu__list .catalog__submenu__item .catalog__submenu__link {
   color: #000000;
   text-decoration: none;
@@ -2669,11 +2672,13 @@ header {
   margin-bottom: 2px;
 }
 .cat-right__left .section__cat:nth-child(2) {
-  width: 33.33%;
+  width: calc(33.33% - 2px);
+  margin-bottom: 2px;
+  margin-left: 2px;
 }
 .cat-right__left .section__cat:nth-child(2) img {
-  margin-left: 2px;
-  margin-bottom: 2px;
+  /*margin-left: 2px;*/
+  /*margin-bottom: 2px;*/
 }
 .cat-right__right {
   width: 100%;

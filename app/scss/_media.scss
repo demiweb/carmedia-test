@@ -143,6 +143,9 @@
 
   .catalog__menu.main-page {
     display: none;
+    &.menu-non-header {
+      display: none !important;
+    }
   }
 
 
@@ -812,15 +815,20 @@
     width: auto;
   }
 
-
+  .tab-panel {
+    margin-bottom: 30px;
+  }
   body {
     font-size: 12px;
   }
   .faq__title {
     padding: 13px;
   }
+  .bonus__block {
+    padding: 30px 20px;
+  }
   .accordion-history_item.faq__item .article-one {
-    padding: 10px 10px;
+    padding: 10px 13px;
   }
   .slider__header.category__title {
     margin-top: 40px;
@@ -1265,6 +1273,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .pr__info {
+    left: -15px;
+    right: -14px;
+  }
   .search-block .column-left, .search-block .content {
     padding-left: 0;
     padding-right: 0;
