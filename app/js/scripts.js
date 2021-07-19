@@ -1,4 +1,26 @@
+let subMenuMob3lvl = [...document.querySelectorAll('.catalog__submenu__item.has-sub3 > .catalog__submenu__link')];
 
+subMenuMob3lvl.forEach((sub) => {
+    sub.addEventListener('click', (e) => {
+        e.preventDefault();
+        sub.closest('.has-sub3').classList.add('active');
+    });
+});
+let subMenusLink = [...document.querySelectorAll('.has-submenu > a')];
+
+function subMenusOpeners() {
+    if (!subMenusLink.length) {
+
+    } else {
+        subMenusLink.forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                btn.closest('.has-submenu').classList.add('active');
+            })
+        })
+    }
+}
+subMenusOpeners();
 
 $('.telephone__numbers').hover(
     function () {
@@ -51,16 +73,9 @@ if (window.innerWidth < 1024) {
         btn.addEventListener('click', () => {
             $('.catalog__menu').addClass('open');
         })
-    })
-
-    let subMenuMob3lvl = [...document.querySelectorAll('.catalog__submenu__item.has-sub3 > .catalog__submenu__link')];
-
-    subMenuMob3lvl.forEach((sub) => {
-        sub.addEventListener('click', (e) => {
-            e.preventDefault();
-            sub.closest('.has-sub3').classList.add('active');
-        });
     });
+
+
     [...document.querySelectorAll('.submenu3-back')].forEach((sb3) => {
         sb3.addEventListener('click', () => {
             sb3.closest('.has-sub3').classList.remove('active');
@@ -171,21 +186,8 @@ else {
         }
     );
 }
-let subMenusLink = [...document.querySelectorAll('.has-submenu > a')];
 
-function subMenusOpeners() {
-    if (!subMenusLink.length) {
 
-    } else {
-        subMenusLink.forEach((btn) => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                btn.closest('.has-submenu').classList.add('active');
-            })
-        })
-    }
-}
-subMenusOpeners();
 $('.pr__slide').hover(
     function () {
         $('.pr__info-hover').addClass('active')

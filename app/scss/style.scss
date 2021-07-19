@@ -1877,7 +1877,7 @@ select.form__input option:first {
 
 .title__contant {
     margin-top: 46px;
-    margin-bottom: 12px;
+    margin-bottom: 46px;
 }
 
 .content-info {
@@ -5266,5 +5266,16 @@ input, a, ::-webkit-scrollbar {
     }
 }
 
+
+.policy {
+    width: 100%;
+    .container {
+        max-width: 1160px;
+
+    }
+    .article-one {
+        padding: 44px 50px;
+    }
+}
 
 @import "_media.scss";
