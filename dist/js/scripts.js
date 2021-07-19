@@ -711,10 +711,11 @@ $('.thumb-slider').slick({
             breakpoint: 769,
             settings: {
                 centerMode: true,
+                centerPadding: '50px',
                 slidesToShow: 1,
                 arrows: true,
-                variableWidth: true,
                 dots: true,
+
                 vertical: false,
                 asNavFor: false,
                 infinite: false,

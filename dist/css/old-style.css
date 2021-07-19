@@ -1752,6 +1752,8 @@ max-height: 512px;
 @media (max-width: 1240px) {
   .catalog__menu .submenu3__list {
     width: 445px;
+    max-height: none;
+    overflow-y: visible;
   }
 }
 
