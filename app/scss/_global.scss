@@ -890,7 +890,11 @@ hr {
         }
     }
 }
-
+.nav-pills .nav-link {
+    border-radius: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+}
 .slider__header.category__title {
     margin-top: 48px;
     margin-bottom: 40px;
