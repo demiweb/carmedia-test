@@ -264,6 +264,7 @@ body::-webkit-scrollbar {
 .telephone {
   position: relative;
 }
+
 .telephones__hidden {
   position: relative;
   visibility: hidden;
