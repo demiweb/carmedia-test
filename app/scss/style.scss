@@ -1586,6 +1586,8 @@ select.form__input option:first {
 
     &__img {
         margin-right: 21px;
+        border-radius: 50%;
+        box-shadow: 0 5px 20px rgba(15, 10, 43,  0.05);
 
         img {
             width: 60px;
@@ -3917,7 +3919,7 @@ table.history-title__main {
 
 .error-page {
     display: flex;
-    margin-bottom: 24px;
+    margin-bottom: 44px;
     margin-top: 57px;
     align-items: center;
     justify-content: center;
@@ -3961,6 +3963,7 @@ table.history-title__main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 17px;
 
     &_item {
         max-width: 182px;
@@ -3968,7 +3971,6 @@ table.history-title__main {
         background: #FFFFFF;
         box-shadow: 0px 2px 25px rgba(15, 15, 29, 0.04);
         border-radius: 5px;
-        margin-right: 17px;
         padding: 16px 14px 12px;
         text-align: center;
 
@@ -5187,6 +5189,9 @@ table.history-title__main {
     position: static !important;
 }
 
+.section.section-404 {
+    margin-bottom: 0;
+}
 
 
 
@@ -5197,7 +5202,9 @@ table.history-title__main {
 
 
 
-
+input, a {
+    -webkit-appearance: none !important;
+}
 
 
 @import "_media.scss";
