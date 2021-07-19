@@ -3610,6 +3610,7 @@ table.orders__history {
 
 .orders__history {
 
+
     &_head {
         font-weight: 500;
         font-size: 15px;
@@ -3617,6 +3618,7 @@ table.orders__history {
         color: #000000;
         display: block;
         width: 100%;
+        -webkit-appearance: none !important;
         
 
         &.collapsed {
