@@ -5290,5 +5290,14 @@ input, a, ::-webkit-scrollbar {
         margin-bottom: 41px;
     }
 }
+.section__blog__item img {
+    border-radius: 5px 5px 0 0;
+}
+.tag {
+    border-radius: 0;
+}
+.section__blog__img {
+    border-radius: 5px 5px 0 0;
+}
 
 @import "_media.scss";
