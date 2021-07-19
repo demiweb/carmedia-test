@@ -2048,6 +2048,7 @@ select.form__input option:first {
 .content-profile {
     min-height: 664px;
     display: flex;
+    width: calc(100% - 294px);
     flex-direction: column;
     flex-grow: 1;
 
@@ -5061,6 +5062,7 @@ table.history-title__main {
 
 .column-left__profile {
     width: 294px;
+    flex-shrink: 0;
 }
 
 .contact__block_item {
@@ -5276,6 +5278,11 @@ input, a, ::-webkit-scrollbar {
     .article-one {
         padding: 44px 50px;
     }
+}
+
+
+.checkout .accordion-item  .accordion-item .accordion-header {
+    margin-bottom: 0;
 }
 
 @import "_media.scss";
