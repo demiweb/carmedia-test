@@ -581,6 +581,9 @@ hr {
     position: relative;
     white-space: nowrap;
     min-width: 112px;
+    border-radius: 0;
+    background: none !important;
+    box-shadow: none;
 
     &::before {
         content: "";
