@@ -199,6 +199,7 @@ body::-webkit-scrollbar {
   text-decoration: none;
   -webkit-transition: 0.8s ease 0s;
   transition: 0.8s ease 0s;
+  font-size: 14px;
 }
 .has-children .submenu .sub__item .sub__link:hover {
   color: #EF0D0D;
