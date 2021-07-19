@@ -4076,6 +4076,9 @@ table.history-title__main {
 .faq__title.collapsed {
     color: #545468;
 }
+.article-one ul li:before {
+    flex-shrink: 0;
+}
 .faq__title {
     font-weight: 500;
     font-size: 20px;
@@ -4084,6 +4087,7 @@ table.history-title__main {
     padding: 13px 13px 13px 50px;
     display: flex;
     align-items: center;
+    -webkit-appearance: none !important;
 
     
     &.collapsed {
