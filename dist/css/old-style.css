@@ -40,7 +40,6 @@ body {
 }
 body::-webkit-scrollbar {
   display: none;
-  all: unset;
 }
 .container {
   max-width: 1424px;
@@ -839,6 +838,9 @@ header {
   transition: 0.5s ease 0s;
   overflow-y: scroll;
   overflow-x: hidden !important;
+}
+.mobile__hidden::-webkit-scrollbar {
+  display: none;
 }
 .mobile__hidden .catalog-button {
   background: -webkit-gradient(linear, left top, right top, from(#FF2517), to(#FF5F1B));
