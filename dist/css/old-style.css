@@ -599,8 +599,11 @@ body::-webkit-scrollbar {
 .hystmodal::-webkit-scrollbar {
   display: none;
 }
-.enter:hover > img {
-  filter: invert(0.3);
+/*.enter:hover > img {*/
+/*  filter: invert(0.3);*/
+/*}*/
+.enter a:hover {
+  color: #c5c5c9;
 }
 .shop__cart {
   position: relative;
@@ -1643,6 +1646,7 @@ header {
 .catalog__menu .catalog__list .catalog__item:hover .catalog__link {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 37, 23, 0.1)), to(rgba(255, 95, 27, 0.1)));
   background: linear-gradient(90deg, rgba(255, 37, 23, 0.1) 0%, rgba(255, 95, 27, 0.1) 100%);
+  border-left-color: #FF2517;
 }
 .catalog__menu .catalog__list .catalog__item:hover .catalog__link::after {
   background: #FF2517;
@@ -1732,6 +1736,7 @@ header {
 .catalog__menu .catalog__submenu__list .catalog__submenu__item:hover .catalog__submenu__link {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 37, 23, 0.1)), to(rgba(255, 95, 27, 0.1)));
   background: linear-gradient(90deg, rgba(255, 37, 23, 0.1) 0%, rgba(255, 95, 27, 0.1) 100%);
+  border-left-color: #FF2517;
 }
 .catalog__menu .catalog__submenu__list .has-sub3 .catalog__submenu__link::after {
   content: "";
