@@ -596,9 +596,11 @@ body::-webkit-scrollbar {
 .enter:hover a {
   color: #ffffff;
 }
+.hystmodal::-webkit-scrollbar {
+  display: none;
+}
 .enter:hover > img {
-  filter: brightness(20%) sepia(62) saturate(63) hue-rotate(8deg);
-
+  filter: invert(0.3);
 }
 .shop__cart {
   position: relative;
@@ -627,13 +629,13 @@ body::-webkit-scrollbar {
   display: none;
 }
 .shop__cart:hover {
-  /*background: #3E3E4B;*/
+  background: #3E3E4B;
 }
 .shop__cart:hover > img {
-  filter: invert(0.3);
+  /*filter: invert(0.3);*/
 }
 .shop__cart:hover .cart__line {
-  /*display: block;*/
+  display: block;
 }
 .shop__cart:hover .cart__hidden {
   opacity: 1;
@@ -685,6 +687,7 @@ body::-webkit-scrollbar {
 .shop__item {
   /* margin-right: 25px; */
   width: 48px;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,6 +695,33 @@ body::-webkit-scrollbar {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.shop__item.like {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.shop__item.like .cart__line {
+  width: 100%;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(#FF2517), to(#FF5F1B));
+  background: linear-gradient(
+          90deg
+          , #FF2517 0%, #FF5F1B 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+.shop__item.like:hover {
+
+  background: #3E3E4B;
+}
+.shop__item.like:hover .cart__line {
+ display: block;
+}
+
 .like::before {
   content: "";
   -webkit-mask-image: url(../img/heart.svg);
@@ -706,8 +736,8 @@ body::-webkit-scrollbar {
   height: 22px;
 }
 .like:hover::before {
-  background: -webkit-gradient(linear, left top, right top, from(#FF2517), to(#FF5F1B));
-  background: linear-gradient(90deg, #FF2517 0%, #FF5F1B 100%);
+  /*background: -webkit-gradient(linear, left top, right top, from(#FF2517), to(#FF5F1B));*/
+  /*background: linear-gradient(90deg, #FF2517 0%, #FF5F1B 100%);*/
 }
 .compare::before {
   content: "";
@@ -723,8 +753,8 @@ body::-webkit-scrollbar {
   height: 22px;
 }
 .compare:hover::before {
-  background: -webkit-gradient(linear, left top, right top, from(#FF2517), to(#FF5F1B));
-  background: linear-gradient(90deg, #FF2517 0%, #FF5F1B 100%);
+  /*background: -webkit-gradient(linear, left top, right top, from(#FF2517), to(#FF5F1B));*/
+  /*background: linear-gradient(90deg, #FF2517 0%, #FF5F1B 100%);*/
 }
 /* end bottom-line */
 .back__catalog {
