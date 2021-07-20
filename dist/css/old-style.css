@@ -2974,6 +2974,7 @@ max-height: 100%;
   display: -ms-flexbox;
   display: flex;
   height: auto;
+
 }
 .cat-right__right .rr__block .section__cat:nth-child(1) {
   margin-bottom: 2px;
@@ -3000,6 +3001,7 @@ max-height: 100%;
   -webkit-transition: 0.5s ease 0s;
   transition: 0.5s ease 0s;
   height: auto;
+  transform: scale(1.01);
 }
 .section__cat span {
   font-size: 18px;
