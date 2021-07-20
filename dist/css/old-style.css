@@ -1166,6 +1166,7 @@ header {
   color: #000000;
   line-height: 16px;
   opacity: 0.5;
+  margin-top: 2px;
 }
 .cart__product__list {
   height: 327px;
@@ -1692,8 +1693,8 @@ header {
   opacity: 0;
   width: 281px;
   /*max-height: 532px;*/
-  -webkit-box-shadow: 0px 6px 10px rgba(24, 46, 72, 0.1);
-          box-shadow: 0px 6px 10px rgba(24, 46, 72, 0.1);
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 .catalog__menu .catalog__submenu__list::-webkit-scrollbar {
  all: unset;
@@ -1787,8 +1788,10 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 532px;
-max-height: 512px;
-  overflow-y: scroll;
+max-height: 100%;
+  overflow-y: auto;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 .catalog__menu .submenu3__list .submenu3__item {
   width: 25%;
