@@ -3070,6 +3070,7 @@ max-height: 100%;
   height: 176px;
   width: 100%;
   overflow: hidden;
+  display: block;
 
 }
 .blog .section__blog__img{
