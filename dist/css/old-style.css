@@ -2949,7 +2949,7 @@ max-height: 100%;
           flex-direction: row;
 }
 .cat-right__right .section__cat {
-  width: calc(100% / 3);
+  width: calc((100% /3) - 1px);
   margin-right: 2px;
 }
 .cat-right__right .rr__block {
