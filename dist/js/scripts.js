@@ -206,7 +206,7 @@ function checkHeaderPosition() {
             $('header .bottom-line').addClass('fixed');
             $('main').css('padding-top', $('header .bottom-line').height());
             $('header .catalog__menu').addClass('new');
-            if ($('header .catalog__menu').hasClass('act')) {
+            if (!$('header .catalog__menu').hasClass('hidden-menu')) {
 
             } else {
                 $('header .catalog__menu').addClass('hidden-menu');
@@ -216,7 +216,7 @@ function checkHeaderPosition() {
         } else {
             $('header .bottom-line').removeClass('fixed');
             $('header .catalog__menu').removeClass('new');
-            if ($('header .catalog__menu').hasClass('act')) {
+            if (!$('header .catalog__menu').hasClass('hidden-menu')) {
 
             } else {
                 $('header .catalog__menu').addClass('hidden-menu');
