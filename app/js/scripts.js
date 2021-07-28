@@ -733,7 +733,7 @@ $('.thumb-slider').slick({
                 asNavFor: false,
                 infinite: false,
                 verticalSwiping: false,
-                variableWidth: true,
+                variableWidth: false,
                 appendDots: $('.appendDots1'),
                 appendArrows: $('.appendArrowsThumb'),
             }
