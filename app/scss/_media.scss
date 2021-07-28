@@ -573,7 +573,25 @@
 }
 
 @media (max-width: 768px) {
+  .thumb-slider__item {
 
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    max-width: none;
+    width: 100%;
+    margin-bottom: 0;
+    img {
+      width: 100%;
+      height:auto;
+      margin: 0;
+
+    }
+    &.slick-current {
+      border: none;
+    }
+  }
   .error-page img {
     width: 310px;
     height: auto;
@@ -1109,6 +1127,10 @@
     .btn-buy {
       max-width: 100%;
     }
+  }
+  .product__btn-block .product__btn .btn-buy {
+    max-width: 100%;
+    height: 46px;
   }
 
   .product__btn {

@@ -221,9 +221,10 @@ body::-webkit-scrollbar {
   font-weight: 700;
   -webkit-transition: 0.8s ease 0s;
   transition: 0.8s ease 0s;
+  display: block;
 }
 .telephone:hover {
-  /*color: #EF0D0D;*/
+  color: #000;
 }
 .telephone__block {
   display: -webkit-box;
@@ -409,6 +410,7 @@ body::-webkit-scrollbar {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 12px;
+  align-items: flex-start;
 }
 .telephones__hidden .telephones__block .telephone__ico {
   background: #ffffff;
@@ -442,6 +444,8 @@ body::-webkit-scrollbar {
   font-size: 13px;
   font-weight: 400;
   color: #646D73;
+  margin-top: 5px;
+  margin-left: -5px;
 }
 .telephones__hidden .telephones__block .telephone__number {
   text-decoration: none;
@@ -449,6 +453,7 @@ body::-webkit-scrollbar {
   font-weight: 700;
   -webkit-transition: 0.8s ease 0s;
   transition: 0.8s ease 0s;
+  margin-top: 1px;
 }
 .telephones__hidden .telephones__block .telephone__number:hover {
   /*color: #EF0D0D;*/
@@ -1937,7 +1942,7 @@ max-height: 100%;
   margin-left: 10px;
 }
 .all:hover {
-  color: #000000;
+  color: #FF2F22;
 }
 .pr__slide {
   width: calc(100% / 5);
@@ -2120,14 +2125,15 @@ max-height: 100%;
   border-radius: 5px;
   background: -webkit-gradient(linear, left top, right top, from(#FF2517), to(#FF5F1B));
   background: linear-gradient(90deg, #FF2517 0%, #FF5F1B 100%);
-  -webkit-transition: 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  background-size: 100%;
+  -webkit-transition: 0.2s ease;
+  transition: all 0.2s ease;
 }
 .addtocart:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#FF2517), to(#FF2517));
-  background: linear-gradient(90deg, #FF2517 0%, #FF2517 100%);
-  -webkit-transition: 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+
+  -webkit-transition: 0.2s ease;
+  transition: all 0.2s ease;
+  background-size: 200%;
 }
 @media (max-width: 992px) {
   .addtocart {
@@ -2247,7 +2253,7 @@ max-height: 100%;
   border-radius: 100px;
   width: auto;
   height: 24px;
-  padding: 0 12px;
+  padding: 0 12px 0 9px;
   margin-bottom: 3px;
 }
 .r3::before {
@@ -2256,7 +2262,7 @@ max-height: 100%;
   width: 11px;
   height: 11px;
   display: block;
-  margin-right: 4px;
+  margin-right: 6px;
 }
 @media (max-width: 600px) {
   .r3 {

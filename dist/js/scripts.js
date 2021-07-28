@@ -206,12 +206,21 @@ function checkHeaderPosition() {
             $('header .bottom-line').addClass('fixed');
             $('main').css('padding-top', $('header .bottom-line').height());
             $('header .catalog__menu').addClass('new');
-            $('header .catalog__menu').addClass('hidden-menu');
+            if ($('header .catalog__menu').hasClass('act')) {
+
+            } else {
+                $('header .catalog__menu').addClass('hidden-menu');
+            }
+
             // console.log($('header').height());
         } else {
             $('header .bottom-line').removeClass('fixed');
             $('header .catalog__menu').removeClass('new');
-            $('header .catalog__menu').add('hidden-menu');
+            if ($('header .catalog__menu').hasClass('act')) {
+
+            } else {
+                $('header .catalog__menu').addClass('hidden-menu');
+            }
             $('main').css('padding-top', 0);
         }
 
@@ -689,6 +698,7 @@ $('.info__block').click(function () {
 $('.main-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    asNavFor: '.thumb-slider',
     dots: false,
     arrows: false,
     infinite: true,
@@ -698,7 +708,7 @@ $('.main-slider').slick({
 
 
 $('.thumb-slider').slick({
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     dots: false,
     arrows: false,
@@ -708,6 +718,7 @@ $('.thumb-slider').slick({
     focusOnSelect: true,
     centerMode: false,
     vertical: true,
+    verticalSwiping: true,
     responsive: [
         {
             breakpoint: 769,
@@ -715,12 +726,14 @@ $('.thumb-slider').slick({
                 centerMode: true,
                 centerPadding: '50px',
                 slidesToShow: 1,
+                slidesToScroll: 1,
                 arrows: true,
                 dots: true,
-
                 vertical: false,
                 asNavFor: false,
                 infinite: false,
+                verticalSwiping: false,
+                variableWidth: true,
                 appendDots: $('.appendDots1'),
                 appendArrows: $('.appendArrowsThumb'),
             }
@@ -728,6 +741,13 @@ $('.thumb-slider').slick({
     ]
 });
 
+$('.thumb-slider__item').click(function() {
+    if(window.innerWidth > 768) {
+        return false;
+    }
+});
+
+$('.fancybox').fancybox();
 $(document).ready(function() {
     if (document.querySelector('.sort-select')) {
         $('.sort-select').niceSelect();
