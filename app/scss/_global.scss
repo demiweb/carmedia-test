@@ -194,7 +194,7 @@ hr {
         &:hover {
             color: #ffffff;
             transition: all .2s ease-in-out;
-            background-size: 200%;
+            background-size: 400%;
         }
     }
 
@@ -276,7 +276,7 @@ hr {
         &:hover {
             color: #ffffff;
             transition: all .2s ease-in-out;
-            background-size: 200%;
+            background-size: 400%;
         }
     }
 
@@ -531,8 +531,8 @@ hr {
             &::after {
                 content: '';
                 display: inline-block;
-                width: 9px;
-                height: 6px;
+                width: 6px;
+                height: 8px;
                 background-image: url('../icons/breadcrumbs.svg');
                 background-repeat: no-repeat;
                 background-position: center;

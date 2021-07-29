@@ -1070,6 +1070,7 @@ select.form__input option:first {
     transition: all .3s ease-in-out;
     position: relative;
     overflow: visible;
+    box-shadow: none;
 
     &::after {
         content: "";
@@ -1093,6 +1094,10 @@ select.form__input option:first {
         z-index: 10;
         box-shadow: 0 5px 6px rgba(0,0, 0, 0.15), 0 5px 6px rgba(0, 0, 0, 0.07), 0 -3px 6px rgba(0,0, 0, 0.09);
         transition: all .3s ease-in-out;
+        &:after {
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
     }
 }
 .pr__slide.slick-slide {
@@ -1113,6 +1118,11 @@ select.form__input option:first {
 
 .pr__slide:hover .pr__info-hover {
     overflow: visible;
+
+    .pr__info {
+        box-shadow: 0 23px 6px rgba(0, 0, 0, 0.15), 0 23px 6px rgba(0, 0, 0, 0.07), 0 23px 6px rgba(0, 0, 0, 0.09);
+        transition: box-shadow 0.3s ease;
+    }
 }
 
 .pr__info {
@@ -1124,7 +1134,8 @@ select.form__input option:first {
     background-color: #fff;
     z-index: 100;
     will-change: box-shadow;
-    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.15), 0 8px 6px rgba(0,0,0,0.07), 0 8px 6px rgba(0,0, 0, 0.09);
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
     &-hover {
         overflow: hidden;
         visibility: visible;
@@ -2894,7 +2905,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 #filter_vier label {
-    margin-bottom: 14px;
+    margin-bottom: 13px;
     margin-right: 0;
 }
 
@@ -4249,19 +4260,33 @@ table.history-title__main {
         background-repeat: no-repeat;
         background-size: 100%;
     }
+    &.r1 {
+        padding-left: 10px;
+        &::before {
+            margin-right: 7px;
+        }
+    }
     &.r2 {
+        padding-left: 11px;
         &::before {
             width: 14px;
             height: 14px;
-            margin-right: 5px;
+            margin-right: 6px;
             margin-left: -3px;
         }
     }
+    &.r3 {
+        padding-left: 9px;
+        &::before {
+            margin-right: 8px;
+        }
+    }
     &.r4 {
+        padding-left: 11px;
         &::before {
             height: 13px;
             width: 8px;
-            margin-right: 7px;
+            margin-right: 9px;
 
         }
     }
@@ -4269,7 +4294,7 @@ table.history-title__main {
         &::before {
             height: 12px;
             width: 12px;
-            margin-right: 5px;
+            margin-right: 6px;
             margin-left: -1px;
 
         }
@@ -4459,9 +4484,9 @@ table.history-title__main {
             }
             &:hover {
                 transition: color 0.3s ease, background-color 0.3s ease;
-                background:  rgba(255, 95, 27, 0.8);
+                background:  rgba(255, 95, 27, 0.1);
                 //background: rgba(0,0,0, 0.5);
-                color: white;
+                //color: white;
             }
             &:last-child {
                 border-bottom: none;
@@ -4553,8 +4578,27 @@ table.history-title__main {
 .btn_fv:hover:not(:active) {
     background: none;
 }
+.button_slider .btn_fv:hover {
+    background: rgba(73,73,86,.65);
+    color: white;
+}
 .irs-from, .irs-single, .irs-to, .total_product.btn_fv {
     margin-top: 6px;
+}
+.total_product.btn_fv {
+    justify-content: flex-end;
+    position: absolute;
+    margin-top: 1px;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+#filter_vier a {
+    width: 100%;
+    display: block;
+}
+#filter_vier label {
+    position: relative;
 }
 #filter_vier {
     padding-bottom: 0;

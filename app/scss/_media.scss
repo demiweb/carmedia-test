@@ -1296,6 +1296,14 @@
       object-fit: contain;
     }
   }
+  .pr__info {
+    left: -15px;
+    right: -15px;
+    padding: 13px 15px 30px;
+  }
+  .pr__slide:hover .pr__info-hover .pr__info {
+    box-shadow: 0 19px 6px rgba(0, 0, 0, 0.15), 0 19px 6px rgba(0, 0, 0, 0.07), 0 19px 6px rgba(0, 0, 0, 0.09);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1307,7 +1315,7 @@
   }
   .pr__info {
     left: -15px;
-    right: -14px;
+    right: -15px;
   }
   .search-block .column-left, .search-block .content {
     padding-left: 0;

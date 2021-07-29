@@ -1283,11 +1283,15 @@ header {
   width: 49%;
   padding: 10px 5px;
   text-align: center;
+  background-size: 100%;
+  transition: background-size 0.3s ease;
 }
 .cart__order:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#FF5F1B), to(#FF2517));
-  background: linear-gradient(90deg, #FF5F1B 0%, #FF2517 100%);
+  /*background: -webkit-gradient(linear, left top, right top, from(#FF5F1B), to(#FF2517));*/
+  /*background: linear-gradient(90deg, #FF5F1B 0%, #FF2517 100%);*/
+  background-size: 400%;
   color: #ffffff;
+  transition: background-size 0.3s ease;
 }
 @media (max-width: 1023px) {
   .main__slider .container {
@@ -2133,7 +2137,7 @@ max-height: 100%;
 
   -webkit-transition: 0.2s ease;
   transition: all 0.2s ease;
-  background-size: 200%;
+  background-size: 400%;
 }
 @media (max-width: 992px) {
   .addtocart {
@@ -2319,7 +2323,7 @@ max-height: 100%;
   border-radius: 100px;
   width: 88px;
   height: 24px;
-  padding: 0 12px 0 11px;
+  padding: 0 12px 0 10px;
   margin-bottom: 3px;
 }
 .r5::before {
@@ -2328,7 +2332,7 @@ max-height: 100%;
   width: 12px;
   height: 12px;
   display: block;
-  margin-right: 9px;
+  margin-right: 10px;
 }
 @media (max-width: 600px) {
   .r5 {
