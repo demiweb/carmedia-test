@@ -1120,13 +1120,46 @@ select.form__input option:first {
     overflow: visible;
 
     .pr__info {
-        box-shadow: 0 23px 6px rgba(0, 0, 0, 0.15), 0 23px 6px rgba(0, 0, 0, 0.07), 0 23px 6px rgba(0, 0, 0, 0.09);
+        box-shadow: 0 23px 5px 6px rgba(0, 0, 0, 0.15), 0 23px 5px 6px rgba(0, 0, 0, 0.07), 0 23px 5px 6px rgba(0, 0, 0, 0.09);
         transition: box-shadow 0.3s ease;
     }
 }
+.pr__slide.pr__container {
+    max-height: 466px;
+    min-height: 466px;
+    box-shadow: none !important;
+    padding: 0 !important;
+    .pr__info-hover {
+        display: none;
+        overflow: visible;
+    }
+    .pr__info {
+        position: static;
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+        box-shadow: none !important;
+    }
+    &:hover {
+        .cont-br {
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 6px rgba(0,0, 0, 0.15), 0 5px 6px rgba(0, 0, 0, 0.07), 0 -3px 6px rgba(0,0, 0, 0.09);
+        }
+        .pr__info-hover {
+            display: block;
+        }
 
+    }
+}
+.cont-br {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    transition: all 0.3s ease;
+
+}
 .pr__info {
-    padding: 13px 20px 31px;
+    padding: 13px 20px 11px 20px ;
     position: absolute;
     left: -20px;
     right: -20px;
