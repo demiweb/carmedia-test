@@ -816,7 +816,7 @@ Visible (elementBtns);
 
 $(".product-banner-fix__container .text ul li").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $(".tabs-section").offset().top
+        scrollTop: $(".tabs-section").offset().top - 30
     }, 200);
 });
 $(".brands-alphabet__item").click(function() {

@@ -60,9 +60,9 @@ hr {
         background-image: url('../icons/link-info.svg');
         background-position: right;
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: 100%;
         width: 13px;
-        height: 14px;
+        height: 15px;
         display: inline-block;
         margin-left: 5px;
     }
@@ -383,6 +383,10 @@ hr {
         white-space: nowrap;
         padding-left: 30px;
         padding-right: 30px;
+        transition: all 0.3s ease;
+        &:hover {
+            background: #b8b8bf;
+        }
     }
 
     &-answer {
@@ -427,15 +431,18 @@ hr {
 
 
     &-filter {
-        background: #494956;
+        background: rgba(73,73,86,.8);
         height: 40px;
         width: 148px;
         color: #ffffff;
+        border: 1px solid #494956;
+        box-sizing: border-box;
+        transition: background-color 0.3s ease;
 
         &:active,
         &:focus,
         &:hover {
-            background: #3E3E4B;
+            background: rgba(73,73,86,.65);
             color: #ffffff;
         }
         
@@ -443,7 +450,7 @@ hr {
 }
 
 .tab-close {
-    background-image: url(../icons/close1.svg);
+    //background-image: url(../icons/close1.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -451,6 +458,25 @@ hr {
     height: 30px;
     border: 1px solid #DBDFE4;
     border-radius: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    svg {
+        line {
+            stroke: black;
+            transition: stroke 0.3s ease;
+
+        }
+    }
+    &:hover {
+        svg {
+            line {
+                transition: stroke 0.3s ease;
+                stroke: #ff2517;
+            }
+        }
+    }
 }
 
 .btn-next {
