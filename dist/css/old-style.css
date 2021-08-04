@@ -3143,7 +3143,7 @@ max-height: 100%;
   color: #000000;
   display: block;
 }
-.section__blog__title:hover {
+.section__blog__title a:hover {
   color: #EF0D0D;
 }
 .t1 {

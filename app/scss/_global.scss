@@ -58,11 +58,11 @@ hr {
     &::after {
         content: "";
         background-image: url('../icons/link-info.svg');
-        background-position: right;
+        background-position: left;
         background-repeat: no-repeat;
-        background-size: 100%;
-        width: 13px;
-        height: 15px;
+        background-size: 13px;
+        width: 15px;
+        height: 16px;
         display: inline-block;
         margin-left: 5px;
     }

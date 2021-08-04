@@ -2447,8 +2447,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
         background: #FFFFFF;
         mix-blend-mode: normal;
         padding: 30px 25px 25px 20px;
-        p {
+        p, a {
             transition: color 0.3s ease;
+            text-decoration: none;
             &:hover {
                 color: #EF0D0D;
             }
@@ -2570,6 +2571,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
     .btn-next {
         margin-right: 0;
         margin-left: auto;
+        &:hover {
+            background-color: rgba(189,189,215,.4);
+        }
     }
 
     .section__blog__date {
@@ -2579,6 +2583,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
     .section__blog__title {
         margin-bottom: 25px;
         padding: 0 25px;
+    }
+}
+.section__blog__title {
+    a {
+        text-decoration: none;
     }
 }
 .content,
@@ -2621,6 +2630,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
         margin-right: 21px;
         display: block;
         object-fit: contain;
+    }
+    > a {
+        display: flex;
+        align-items: center;
     }
 
     .info {
@@ -4220,18 +4233,26 @@ table.history-title__main {
         margin-bottom: 20px;
     }
 }
+@media screen and (min-width: 1024px) {
+    .address__item {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
 
 .about-us__body.map-flex {
     display: flex;
+    align-items: stretch;
 }
 
 .map__block {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
 
     .map {
-        height: 369px;
+        height: 100%;
     }
 }
 

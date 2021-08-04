@@ -101,6 +101,11 @@
 }
 
 @media (max-width: 1023px) {
+  .map__block {
+    .map {
+      height: 370px;
+    }
+  }
   .category-list__item {
     padding-top: 16px;
     padding-bottom: 20px;
