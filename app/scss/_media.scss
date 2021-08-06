@@ -434,10 +434,10 @@
 
     &.r2 {
       &::before {
-        width: 9px;
-        height: 9px;
-        margin-right: 6px;
-        margin-left: 1px;
+        width: 11px;
+        height: 11px;
+        margin-right: 8px;
+        margin-left: -2px;
       }
     }
   }
@@ -857,6 +857,7 @@
   .r1, .r2, .r3, .r4, .r5 {
     display: inline-flex;
     padding: 0 7px;
+    padding-left: 11px;
     width: auto;
   }
 

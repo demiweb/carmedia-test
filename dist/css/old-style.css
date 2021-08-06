@@ -934,9 +934,10 @@ header {
   transition: 0.5s ease 0s;
   overflow-y: scroll;
   overflow-x: hidden !important;
+  touch-action: auto;
 }
 .mobile__hidden::-webkit-scrollbar {
-  display: none;
+  display: none !important;
 }
 .mobile__hidden .catalog-button {
   background: -webkit-gradient(linear, left top, right top, from(#FF2517), to(#FF5F1B));
@@ -2208,6 +2209,9 @@ max-height: 100%;
     width: 112px;
     height: 17px;
   }
+  .r1::before {
+    margin-right: 6px !important;
+  }
 }
 .r2 {
   display: -webkit-box;
@@ -2240,6 +2244,9 @@ max-height: 100%;
     font-size: 8px;
     width: 100px;
     height: 17px;
+  }
+  .r2::before {
+    margin-right: 7px !important;
   }
 }
 .r3 {
@@ -2274,6 +2281,9 @@ max-height: 100%;
     width: 90px;
     height: 17px;
   }
+  .r3::before {
+    margin-right: 7px !important;
+  }
 }
 .r4 {
   display: -webkit-box;
@@ -2307,6 +2317,9 @@ max-height: 100%;
     width: 80px;
     height: 17px;
   }
+  .r4::before {
+    margin-right: 8px !important;
+  }
 }
 .r5 {
   display: -webkit-box;
@@ -2339,6 +2352,10 @@ max-height: 100%;
     font-size: 8px;
     width: 90px;
     height: 17px;
+  }
+  .r5::before {
+    margin-right: 6px !important;
+    margin-left: -2px !important;
   }
 }
 
@@ -2860,6 +2877,11 @@ max-height: 100%;
   align-items: stretch;
   justify-content: flex-start;
   overflow-x: auto;
+  padding-top: 20px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  padding-bottom: 20px;
+
 }
 .mob__cat__items {
   margin-bottom: 24px;
@@ -2868,15 +2890,19 @@ max-height: 100%;
 .mb {
   width: 108px;
   align-items: center;
+  justify-content: flex-start;
   flex-shrink: 0;
   padding: 9px !important;
   font-size: 12px;
   line-height: 14px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 8, 29, 0.05),0px 0px 2px rgba(0, 8, 29, 0.06),0px 1px 3px rgba(0, 8, 29, 0.08);
 }
 
 .mb img {
   width: 34px;
   height: 34px;
+  margin-top: 4px;
 }
 .mb span {
   margin-right: 0;
@@ -3569,7 +3595,7 @@ footer .container {
   transition: 0.5s ease 0s;
 }
 .f__active {
-  color: #EF0D0D;
+  color: #FF5F1B;
   background: transparent;
   border: none;
 }
@@ -3592,5 +3618,5 @@ footer .container {
   text-decoration: none;
 }
 .info__hidden ul li a:hover {
-  color: #EF0D0D;
+  color: #FF5F1B;
 }
