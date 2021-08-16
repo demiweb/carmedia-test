@@ -646,6 +646,9 @@ hr {
         background: linear-gradient(90deg, #FF2517 0%, #FF5F1B 100%);
         transition: .3s left linear,.3s width linear;
     }
+    span {
+        margin-left: 4px;
+    }
 }
 
 .nav-link:focus, 

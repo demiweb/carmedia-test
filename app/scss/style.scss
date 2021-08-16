@@ -4534,7 +4534,7 @@ table.history-title__main {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        padding: 15px 18px 13px;
+        padding: 15px 12px 13px 21px;
         box-sizing: border-box;
         cursor: pointer;
         border-radius: 5px;
@@ -4548,7 +4548,7 @@ table.history-title__main {
             background-size: 100%;
             position: absolute;
             top: 50%;
-            right: 18px;
+            right: 12px;
             transform: translate(0, -50%);
         }
     }
@@ -4755,12 +4755,12 @@ table.history-title__main {
 .filter-mob-btn {
     background: linear-gradient(90deg, #FF2517 0%, #FF5F1B 100%);
     border-radius: 5px;
-    padding: 8px 12px 8px 20px;
+    padding: 7px 12px 9px 20px;
     box-sizing: border-box;
     width: 44%;
     display: none;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     cursor: pointer;
     svg {
         width: 18px;
@@ -4772,6 +4772,7 @@ table.history-title__main {
         font-size: 14px;
         line-height: 16px;
         margin: 0;
+        margin-left: 10px;
 
         /* UI / White */
 
@@ -4780,6 +4781,7 @@ table.history-title__main {
     span {
         display: flex;
         border-radius: 50%;
+        margin-left: auto;
         background: white;
         width: 18px;
         height: 18px;
