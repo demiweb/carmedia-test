@@ -77,6 +77,7 @@ $('.back__catalog').click( () => {
         $('.back__catalog').removeClass('opened')
         $('.close').removeClass('op');
         $('.close').removeClass('op2');
+        $('body').removeClass('no-scroll');
         if (document.querySelector('#column-left')) {
             $('aside#column-left').removeClass('mob-visible');
 
@@ -100,6 +101,7 @@ if (window.innerWidth < 1024) {
             $('.catalog__menu').removeClass('act1');
             $('.close').addClass('op');
             $('.back__catalog').addClass('opened');
+            $('body').addClass('no-scroll');
             console.log('helwww')
         },
         function () {
@@ -173,10 +175,12 @@ if (window.innerWidth < 1024) {
 else {
     $('#catalog-button, .catalog__menu').hover(
         function () {
-            $('.back__catalog').addClass('opened')
+            $('.back__catalog').addClass('opened');
+            $('body').addClass('no-scroll');
         },
         function () {
-            $('.back__catalog').removeClass('opened')
+            $('.back__catalog').removeClass('opened');
+            $('body').removeClass('no-scroll');
         }
     );
     $('#catalog-button:not(.mob-catalog-btn), .catalog__menu:not(.mob-catalog-btn)').hover(
@@ -699,8 +703,10 @@ $(document).ready(function () {
 
     $('.burger').click(function (event) {
         $('.mobile__hidden').toggleClass('open');
+
         $('.close').addClass('op');
         $('.back__catalog').addClass('opened');
+        $('body').addClass('no-scroll');
         // $('.mob-catalog').addClass('opened');
 
 
@@ -710,7 +716,12 @@ $(document).ready(function () {
         $('.mobile__hidden').removeClass('open');
         $('.close').removeClass('op');
         $('.back__catalog').removeClass('opened');
+        $('body').removeClass('no-scroll');
         $('.mob-catalog').removeClass('opened');
+
+        $('.mob-catalog').removeClass('open');
+        $('.has-submenu').removeClass('active');
+        $('.has-sub3').removeClass('active');
 
         if (document.querySelector('#column-left')) {
             $('aside#column-left').removeClass('mob-visible');
@@ -802,12 +813,14 @@ $('.filter-mob-btn').click(()=> {
     $('.close').addClass('op');
     $('.close').addClass('op2');
     $('.back__catalog').addClass('opened');
+    $('body').addClass('no-scroll');
 })
 $('.show-all-filter').click(()=> {
     $('aside#column-left').removeClass('mob-visible');
     $('.close').removeClass('op');
     $('.close').removeClass('op2');
     $('.back__catalog').removeClass('opened');
+    $('body').removeClass('no-scroll');
 })
 
 

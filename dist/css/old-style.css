@@ -3565,6 +3565,7 @@ footer .container {
 .footer__mobile .subscribe input {
   padding: 8.5px 20px;
   height: 41px;
+  font-size: 14px;
 }
 .footer__mobile .info__block{
   font-size: 16px;
@@ -3578,9 +3579,18 @@ footer .container {
   width: max-content;
 }
 .footer__bottom {
-  padding: 0 20px;
+  padding: 0 31px;
   margin-top: 24px;
 }
+@media screen and (max-width: 768px) {
+  .subscribe button {
+    font-weight: 500;
+  }
+  .info__block.f__active + .info__hidden ul{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
 .footer__mobile .footer__socials {
   margin-bottom: 40px;
 }
@@ -3636,7 +3646,7 @@ footer .container {
 }
 .info__hidden ul {
   margin: 0;
-  padding: 0 20px;
+  padding: 0 31px;
 }
 .info__hidden ul li {
   list-style-type: none;

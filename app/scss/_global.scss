@@ -67,6 +67,9 @@ hr {
         margin-left: 5px;
     }
 }
+body.no-scroll {
+    overflow: hidden;
+}
 
 .block__garanty {
     background: rgba(242, 242, 247, 0.2);
