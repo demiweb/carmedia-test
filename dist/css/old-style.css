@@ -925,16 +925,24 @@ header {
   position: fixed;
 
   top: 0;
-  left: -100%;
+  left: 0;
   width: 80%;
   z-index: 6000;
   display: block;
   height: 100%;
-  -webkit-transition: 0.5s ease 0s;
-  transition: 0.5s ease 0s;
-  overflow-y: scroll;
+  -webkit-transform: translate(-100%,0);
+  -ms-transform: translate(-100%,0);
+  transform: translate(-100%,0);
+  -webkit-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  overflow-y: auto;
   overflow-x: hidden !important;
   touch-action: auto;
+}
+.mobile__hidden.open {
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  transform: translate(0,0);
 }
 .mobile__hidden::-webkit-scrollbar {
   display: none !important;
