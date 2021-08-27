@@ -1713,11 +1713,12 @@ header {
 .catalog__menu .catalog__list .has-submenu:hover .catalog__submenu__list {
   opacity: 1;
   visibility: visible;
+  display: block;
   -webkit-transform: translate(100%, 0);
           transform: translate(100%, 0);
 }
 .catalog__menu .catalog__submenu__list {
-  display: block;
+  display: none;
   background: #F8F8F9;
   padding: 0;
   margin: 0;

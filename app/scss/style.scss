@@ -1467,6 +1467,7 @@ select.form__input option:first {
 .product__btn-block {
     .product__btn {
         .btn-buy {
+            font-weight: 500;
             height: 54px;
             padding: 0 69px;
             max-width:232px;
@@ -4024,6 +4025,7 @@ table.history-title__main {
         font-size: 16px;
         line-height: 19px;
         color: rgba(0, 0, 0, 0.7);
+        text-align: justify;
         &:last-child {
             //margin-bottom: 0;
         }
