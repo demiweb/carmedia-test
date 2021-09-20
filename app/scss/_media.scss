@@ -2116,11 +2116,14 @@
     font-size: 12px;
   }
 }
-@media (max-width: 360px) {
+@media screen and (max-width: 425px) {
   .cart__hidden {
-    right: -20px;
-    width: 320px;
+    right: 0;
+    width: calc(100vw - 40px);
   }
+}
+@media (max-width: 360px) {
+
   #column-left.mob-visible {
     width: 85% !important;
     padding: 0;
@@ -2183,5 +2186,12 @@
   }
   .sort-select .list li, .sort-selector .sort-select span.current {
     font-size: 9px;
+  }
+}
+@media screen and (max-width: 359px) {
+  .cart__hidden {
+    .cart__order, .basket {
+      font-size: 12px;
+    }
   }
 }
