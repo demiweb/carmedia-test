@@ -225,25 +225,25 @@ $('.question__row').click(function () {
 /* Модальное окно */
 const login = new HystModal({
   linkAttributeName: "data-hystmodal",
-  closeOnOverlay: false,
+  closeOnOverlay: true,
   
 });
 
 const checkIn = new HystModal({
   linkAttributeName: "data-hystmodal",
-  closeOnOverlay: false,
+  closeOnOverlay: true,
   
 });
 
 const modalCart = new HystModal({
   linkAttributeName: "data-hystmodal",
-  closeOnOverlay: false,
+  closeOnOverlay: true,
   
 });
 
 const сashback = new HystModal({
   linkAttributeName: "data-hystmodal",
-  closeOnOverlay: false,
+  closeOnOverlay: true,
   
 });
 
@@ -255,24 +255,24 @@ const buyOneClick = new HystModal({
 
 const infoDelivery = new HystModal({
   linkAttributeName: "data-hystmodal",
-  closeOnOverlay: false,
+  closeOnOverlay: true,
   
 });
 
 const addNewRewiev = new HystModal({
   linkAttributeName: "data-rewiev",
-  closeOnOverlay: false,
+  closeOnOverlay: true,
   
 });
 const addNewQuestion = new HystModal({
   linkAttributeName: "data-rewiev",
-  closeOnOverlay: false,
+  closeOnOverlay: true,
   
 });
 
 const commentStep = new HystModal({
   linkAttributeName: "data-comment",
-  closeOnOverlay: false,
+  closeOnOverlay: true,
   
 });
 
