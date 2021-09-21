@@ -851,11 +851,21 @@
     width: 100%;
     padding: 24px 24px 34px;
     border-right: none;
-    border-bottom: 1px solid rgba(189, 189, 189, 0.5);
+    border-top: 1px solid rgba(189, 189, 189, 0.5);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    outline: none;
+    &:first-child {
+      border-top: 1px solid rgba(255, 255, 255, 0);
+    }
+    &:hover {
+      border-top: 1px solid rgba(255, 255, 255, 0);
+      & + .pr__add {
+        border-top: 1px solid rgba(255, 255, 255, 0);
+      }
+    }
 .price-sale {
   font-size: 22px;
 }
