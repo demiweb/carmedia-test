@@ -927,6 +927,11 @@
     width: 28px;
     height: 28px;
     transform: translate(-50%, 0);
+    //background-size: 10px;
+    background-color: #fff;
+    background-image: url('../icons/plus.svg');
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: 10px;
   }
   .key-words__block ul li {
