@@ -1,7 +1,7 @@
 export default class HystModal{
     constructor(props){
         let defaultConfig = {
-            backscroll: true,
+            backscroll: false,
             linkAttributeName: 'data-hystmodal',
             closeOnOverlay: true,
             closeOnEsc: true,
@@ -124,7 +124,7 @@ export default class HystModal{
         this.openedWindow = this._nextWindows;
         this._modalBlock = this.openedWindow.querySelector('.hystmodal__window');
         this.config.beforeOpen(this);
-        this._bodyScrollControl();
+        // this._bodyScrollControl();
         HystModal._shadow.classList.add("hystmodal__shadow--show");
         this.openedWindow.classList.add("hystmodal--active");
         this.openedWindow.setAttribute('aria-hidden', 'false');
@@ -157,9 +157,9 @@ export default class HystModal{
         this.openedWindow.setAttribute('aria-hidden', 'true');
 
         if (this.config.catchFocus) this.focusControl();
-        this._bodyScrollControl();
+        // this._bodyScrollControl();
         this.isOpened = false;
-        this.openedWindow.scrollTop = 0;
+        // this.openedWindow.scrollTop = 0;
         this.config.afterClose(this);
 
         if (this._reopenTrigger) {
@@ -212,7 +212,7 @@ export default class HystModal{
             fixedSelectors.map((el)=>{
                 el.style.marginRight = "";
             });
-            window.scrollTo(0, this._scrollPosition);
+            // window.scrollTo(0, this._scrollPosition);
             html.style.top = "";
             return;
         }
