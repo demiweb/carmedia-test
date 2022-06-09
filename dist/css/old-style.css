@@ -39,7 +39,7 @@ body {
   background: #F8F8F9;
 }
 body::-webkit-scrollbar {
-  display: none;
+  /*display: none;*/
 }
 .container {
   max-width: 1424px;
